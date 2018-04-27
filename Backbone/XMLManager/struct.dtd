@@ -1,0 +1,3 @@
+<!ELEMENT books (book+)>
+<!ELEMENT book (name)>
+<!ELEMENT name (#PCDATA)>

@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataStructs/DataStructures.h
+cstdlib
+-
+iostream
+-
+DataStructures.tpp
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataStructs/DataStructures.tpp
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataStructs/DataStructures.tpp
+DataStructures.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataStructs/DataStructures.h
+cstdlib
+-
+iostream
+-
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/HashFunct/HashClass.cpp
+sstream
+-
+HashClass.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/HashFunct/HashClass.h
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/HashFunct/HashClass.h
+string
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/HashFunct/string
+../DataStructs/DataStructures.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataStructs/DataStructures.h
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/HashFunct/main.cpp
+iostream
+-
+../DataStructs/DataStructures.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataStructs/DataStructures.h
+string
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/HashFunct/string
+HashClass.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/HashFunct/HashClass.h
+
