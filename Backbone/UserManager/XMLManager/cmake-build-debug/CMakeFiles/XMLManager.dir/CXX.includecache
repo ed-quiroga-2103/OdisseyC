@@ -1,0 +1,96 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLManager.cpp
+iostream
+-
+XMLManager.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLManager.h
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLManager.h
+XMLParts.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLParts.h
+string
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/string
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLParts.cpp
+iostream
+-
+sstream
+-
+XMLParts.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLParts.h
+pugixml.hpp
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/pugixml.hpp
+string
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/string
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLParts.h
+pugixml.hpp
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/pugixml.hpp
+string
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/string
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/main.cpp
+iostream
+-
+pugixml.hpp
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/pugixml.hpp
+string
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/string
+XMLParts.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLParts.h
+XMLManager.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLManager.h
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/pugiconfig.hpp
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/pugixml.cpp
+pugixml.hpp
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/pugixml.hpp
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+assert.h
+-
+limits.h
+-
+wchar.h
+-
+math.h
+-
+float.h
+-
+istream
+-
+ostream
+-
+string
+-
+new
+-
+stdint.h
+-
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/pugixml.hpp
+pugiconfig.hpp
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/pugiconfig.hpp
+stddef.h
+-
+exception
+-
+iterator
+-
+iosfwd
+-
+string
+-
+

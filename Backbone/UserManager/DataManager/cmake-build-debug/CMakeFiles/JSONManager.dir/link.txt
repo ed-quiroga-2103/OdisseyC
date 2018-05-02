@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/JSONManager.dir/main.cpp.o CMakeFiles/JSONManager.dir/JSONManager.cpp.o  -o JSONManager 

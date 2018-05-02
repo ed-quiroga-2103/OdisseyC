@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/XMLManager.dir/main.cpp.o CMakeFiles/XMLManager.dir/pugixml.cpp.o CMakeFiles/XMLManager.dir/XMLParts.cpp.o CMakeFiles/XMLManager.dir/XMLManager.cpp.o  -o XMLManager 

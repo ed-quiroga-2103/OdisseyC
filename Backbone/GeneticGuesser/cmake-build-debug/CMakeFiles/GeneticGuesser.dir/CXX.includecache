@@ -1,0 +1,66 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataStructs/DataStructures.h
+cstdlib
+-
+iostream
+-
+DataStructures.tpp
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataStructs/DataStructures.tpp
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataStructs/DataStructures.tpp
+DataStructures.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataStructs/DataStructures.h
+cstdlib
+-
+iostream
+-
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/GeneticGuesser/GenG.cpp
+sstream
+-
+GenG.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/GeneticGuesser/GenG.h
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/GeneticGuesser/GenG.h
+../DataStructs/DataStructures.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataStructs/DataStructures.h
+Random.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/GeneticGuesser/Random.h
+string
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/GeneticGuesser/string
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/GeneticGuesser/Random.cpp
+Random.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/GeneticGuesser/Random.h
+ctime
+-
+cmath
+-
+cstdlib
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/GeneticGuesser/cstdlib
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/GeneticGuesser/Random.h
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/GeneticGuesser/main.cpp
+iostream
+-
+Random.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/GeneticGuesser/Random.h
+cstdlib
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/GeneticGuesser/cstdlib
+ctime
+-
+unistd.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/GeneticGuesser/unistd.h
+../DataStructs/DataStructures.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataStructs/DataStructures.h
+GenG.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/GeneticGuesser/GenG.h
+

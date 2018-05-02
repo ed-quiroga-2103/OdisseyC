@@ -1,0 +1,438 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/AlphabeticTree/AlphaTree.cpp
+AlphaTree.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/AlphabeticTree/AlphaTree.h
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/AlphabeticTree/AlphaTree.h
+string
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/AlphabeticTree/string
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataManager/JSONManager.cpp
+fstream
+-
+JSONManager.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataManager/JSONManager.h
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataManager/JSONManager.h
+string
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataManager/string
+nlohmann/json.hpp
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataManager/nlohmann/json.hpp
+iostream
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataManager/iostream
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataManager/nlohmann/json.hpp
+algorithm
+-
+cassert
+-
+ciso646
+-
+cstddef
+-
+functional
+-
+initializer_list
+-
+iosfwd
+-
+iterator
+-
+numeric
+-
+string
+-
+utility
+-
+cstdint
+-
+map
+-
+memory
+-
+string
+-
+vector
+-
+ciso646
+-
+cstddef
+-
+limits
+-
+type_traits
+-
+utility
+-
+exception
+-
+stdexcept
+-
+string
+-
+array
+-
+ciso646
+-
+cstddef
+-
+cstdint
+-
+algorithm
+-
+array
+-
+ciso646
+-
+forward_list
+-
+iterator
+-
+string
+-
+tuple
+-
+type_traits
+-
+utility
+-
+valarray
+-
+ciso646
+-
+iterator
+-
+tuple
+-
+type_traits
+-
+utility
+-
+valarray
+-
+vector
+-
+algorithm
+-
+array
+-
+cassert
+-
+cstddef
+-
+cstring
+-
+ios
+-
+istream
+-
+iterator
+-
+memory
+-
+numeric
+-
+string
+-
+type_traits
+-
+utility
+-
+clocale
+-
+cstddef
+-
+cstdlib
+-
+initializer_list
+-
+ios
+-
+iomanip
+-
+sstream
+-
+string
+-
+vector
+-
+cassert
+-
+cmath
+-
+cstdint
+-
+functional
+-
+string
+-
+utility
+-
+cstddef
+-
+limits
+-
+ciso646
+-
+iterator
+-
+type_traits
+-
+cstddef
+-
+string
+-
+cstddef
+-
+iterator
+-
+utility
+-
+algorithm
+-
+cstddef
+-
+ios
+-
+iterator
+-
+memory
+-
+ostream
+-
+string
+-
+vector
+-
+algorithm
+-
+array
+-
+cassert
+-
+cmath
+-
+cstddef
+-
+cstdint
+-
+cstring
+-
+iomanip
+-
+ios
+-
+iterator
+-
+limits
+-
+sstream
+-
+string
+-
+utility
+-
+algorithm
+-
+array
+-
+cstdint
+-
+cstring
+-
+limits
+-
+algorithm
+-
+array
+-
+cassert
+-
+ciso646
+-
+clocale
+-
+cmath
+-
+cstddef
+-
+cstdint
+-
+cstdio
+-
+iomanip
+-
+iterator
+-
+limits
+-
+string
+-
+sstream
+-
+type_traits
+-
+cassert
+-
+ciso646
+-
+cmath
+-
+cstdint
+-
+cstring
+-
+initializer_list
+-
+utility
+-
+cassert
+-
+numeric
+-
+string
+-
+vector
+-
+utility
+-
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataStructs/DataStructures.h
+cstdlib
+-
+iostream
+-
+DataStructures.tpp
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataStructs/DataStructures.tpp
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataStructs/DataStructures.tpp
+DataStructures.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataStructs/DataStructures.h
+cstdlib
+-
+iostream
+-
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/HashFunct/HashClass.cpp
+sstream
+-
+HashClass.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/HashFunct/HashClass.h
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/HashFunct/HashClass.h
+string
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/HashFunct/string
+../DataStructs/DataStructures.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataStructs/DataStructures.h
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/UserManager.cpp
+UserManager.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/UserManager.h
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/UserManager.h
+DataManager/JSONManager.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataManager/JSONManager.h
+XMLManager/XMLManager.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLManager.h
+XMLManager/XMLParts.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLParts.h
+HashFunct/HashClass.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/HashFunct/HashClass.h
+AlphabeticTree/AlphaTree.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/AlphabeticTree/AlphaTree.h
+string
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/string
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLManager.cpp
+iostream
+-
+XMLManager.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLManager.h
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLManager.h
+XMLParts.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLParts.h
+string
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/string
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLParts.cpp
+iostream
+-
+sstream
+-
+XMLParts.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLParts.h
+pugixml.hpp
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/pugixml.hpp
+string
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/string
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLParts.h
+pugixml.hpp
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/pugixml.hpp
+string
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/string
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/pugiconfig.hpp
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/pugixml.cpp
+pugixml.hpp
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/pugixml.hpp
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+assert.h
+-
+limits.h
+-
+wchar.h
+-
+math.h
+-
+float.h
+-
+istream
+-
+ostream
+-
+string
+-
+new
+-
+stdint.h
+-
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/pugixml.hpp
+pugiconfig.hpp
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/pugiconfig.hpp
+stddef.h
+-
+exception
+-
+iterator
+-
+iosfwd
+-
+string
+-
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/main.cpp
+iostream
+-
+UserManager.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/UserManager.h
+XMLManager/XMLParts.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLParts.h
+XMLManager/XMLManager.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLManager.h
+

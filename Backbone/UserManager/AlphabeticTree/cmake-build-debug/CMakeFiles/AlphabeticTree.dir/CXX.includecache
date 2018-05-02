@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/AlphabeticTree/AlphaTree.cpp
+AlphaTree.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/AlphabeticTree/AlphaTree.h
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/AlphabeticTree/AlphaTree.h
+string
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/AlphabeticTree/string
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/AlphabeticTree/main.cpp
+iostream
+-
+AlphaTree.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/AlphabeticTree/AlphaTree.h
+
