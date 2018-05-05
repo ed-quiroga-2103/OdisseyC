@@ -5,6 +5,12 @@
 #include <fstream>
 #include "JSONManager.h"
 
+JSONManager::JSONManager(string path) {
+
+    this->PATH = path;
+
+}
+
 json JSONManager::newUser(string username, string pass, string name, string age, string genres) {
 
     json user;
@@ -18,23 +24,34 @@ json JSONManager::newUser(string username, string pass, string name, string age,
     return user;
 }
 
+json JSONManager::newSong(string song, string artist, string album, string lyrics) {
+
+    json newJson;
+
+    newJson["song"] = song;
+    newJson["artist"] = artist;
+    newJson["album"] = album;
+    newJson["lyrics"] = lyrics;
+
+    return newJson;
+
+}
+
 void JSONManager::loadJSON() {
     if(this->dataExists()) {
-        std::ifstream i("data.json");
+        std::ifstream i(PATH);
 
         i >> this->data;
     }
     else{
 
-        std::ofstream outfile ("data.json");
-
+        std::ofstream outfile (PATH);
     }
-
 }
 
-void JSONManager::saveUser(json user) {
+void JSONManager::saveNewJSON(json newData) {
 
-    this->data[this->data.size()] = user;
+    this->data[this->data.size()] = newData;
 
 }
 
@@ -46,16 +63,17 @@ void JSONManager::saveData() {
 
     std::ofstream out;
 
-    out.open ("data.json", std::ofstream::in);
+    out.open (PATH, std::ofstream::in);
 
     out.write(this->data.dump().c_str(),this->data.dump().size());
 
     out.close();
 
 }
+
 bool JSONManager::dataExists() {
 
-    std::ifstream infile("data.json");
+    std::ifstream infile(PATH);
     return infile.good();
 
 
