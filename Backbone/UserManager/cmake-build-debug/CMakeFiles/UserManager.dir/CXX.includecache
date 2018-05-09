@@ -14,6 +14,36 @@ AlphaTree.h
 string
 /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/AlphabeticTree/string
 
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/BTree/BTree.cpp
+BTree.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/BTree/BTree.h
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/BTree/BTree.h
+iostream
+-
+string
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/BTree/string
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataBaseManager.cpp
+DataBaseManager.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataBaseManager.h
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataBaseManager.h
+DataManager/JSONManager.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataManager/JSONManager.h
+XMLManager/XMLManager.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLManager.h
+XMLManager/XMLParts.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLParts.h
+HashFunct/HashClass.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/HashFunct/HashClass.h
+AlphabeticTree/AlphaTree.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/AlphabeticTree/AlphaTree.h
+string
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/string
+BTree/BTree.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/BTree/BTree.h
+
 /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataManager/JSONManager.cpp
 fstream
 -
@@ -332,24 +362,6 @@ string
 ../DataStructs/DataStructures.h
 /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataStructs/DataStructures.h
 
-/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/UserManager.cpp
-UserManager.h
-/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/UserManager.h
-
-/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/UserManager.h
-DataManager/JSONManager.h
-/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataManager/JSONManager.h
-XMLManager/XMLManager.h
-/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLManager.h
-XMLManager/XMLParts.h
-/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLParts.h
-HashFunct/HashClass.h
-/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/HashFunct/HashClass.h
-AlphabeticTree/AlphaTree.h
-/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/AlphabeticTree/AlphaTree.h
-string
-/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/string
-
 /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLManager.cpp
 iostream
 -
@@ -429,10 +441,14 @@ string
 /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/main.cpp
 iostream
 -
-UserManager.h
-/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/UserManager.h
+DataBaseManager.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataBaseManager.h
 XMLManager/XMLParts.h
 /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLParts.h
 XMLManager/XMLManager.h
 /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLManager.h
+BTree/BTree.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/BTree/BTree.h
+string
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/string
 

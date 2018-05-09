@@ -11,7 +11,7 @@ include_directories(${/nlohmann})
 
 
 
-add_executable(UserManager main.cpp UserManager.cpp UserManager.h XMLManager/pugixml.cpp XMLManager/pugixml.hpp XMLManager/pugiconfig.hpp
+add_executable(UserManager main.cpp DataBaseManager.cpp DataBaseManager.h XMLManager/pugixml.cpp XMLManager/pugixml.hpp XMLManager/pugiconfig.hpp
                 HashFunct/HashClass.cpp HashFunct/HashClass.h DataManager/JSONManager.cpp XMLManager/XMLParts.cpp
         XMLManager/XMLParts.h XMLManager/XMLManager.cpp XMLManager/XMLManager.h DataManager/JSONManager.h
-                AlphabeticTree/AlphaTree.cpp AlphabeticTree/AlphaTree.h nlohmann/json.hpp)
+                AlphabeticTree/AlphaTree.cpp AlphabeticTree/AlphaTree.h nlohmann/json.hpp BTree/BTree.cpp BTree/BTree.h)

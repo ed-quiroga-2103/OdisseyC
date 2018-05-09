@@ -1,12 +1,13 @@
 file(REMOVE_RECURSE
   "CMakeFiles/UserManager.dir/main.cpp.o"
-  "CMakeFiles/UserManager.dir/UserManager.cpp.o"
+  "CMakeFiles/UserManager.dir/DataBaseManager.cpp.o"
   "CMakeFiles/UserManager.dir/XMLManager/pugixml.cpp.o"
   "CMakeFiles/UserManager.dir/HashFunct/HashClass.cpp.o"
   "CMakeFiles/UserManager.dir/DataManager/JSONManager.cpp.o"
   "CMakeFiles/UserManager.dir/XMLManager/XMLParts.cpp.o"
   "CMakeFiles/UserManager.dir/XMLManager/XMLManager.cpp.o"
   "CMakeFiles/UserManager.dir/AlphabeticTree/AlphaTree.cpp.o"
+  "CMakeFiles/UserManager.dir/BTree/BTree.cpp.o"
   "UserManager.pdb"
   "UserManager"
 )

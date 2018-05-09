@@ -6,53 +6,53 @@
 
 #IncludeRegexTransform: 
 
-/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLManager.cpp
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataBaseManager/XMLManager/XMLManager.cpp
 iostream
 -
 XMLManager.h
-/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLManager.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataBaseManager/XMLManager/XMLManager.h
 
-/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLManager.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataBaseManager/XMLManager/XMLManager.h
 XMLParts.h
-/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLParts.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataBaseManager/XMLManager/XMLParts.h
 string
-/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/string
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataBaseManager/XMLManager/string
 
-/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLParts.cpp
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataBaseManager/XMLManager/XMLParts.cpp
 iostream
 -
 sstream
 -
 XMLParts.h
-/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLParts.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataBaseManager/XMLManager/XMLParts.h
 pugixml.hpp
-/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/pugixml.hpp
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataBaseManager/XMLManager/pugixml.hpp
 string
-/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/string
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataBaseManager/XMLManager/string
 
-/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLParts.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataBaseManager/XMLManager/XMLParts.h
 pugixml.hpp
-/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/pugixml.hpp
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataBaseManager/XMLManager/pugixml.hpp
 string
-/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/string
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataBaseManager/XMLManager/string
 
-/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/main.cpp
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataBaseManager/XMLManager/main.cpp
 iostream
 -
 pugixml.hpp
-/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/pugixml.hpp
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataBaseManager/XMLManager/pugixml.hpp
 string
-/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/string
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataBaseManager/XMLManager/string
 XMLParts.h
-/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLParts.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataBaseManager/XMLManager/XMLParts.h
 XMLManager.h
-/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLManager.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataBaseManager/XMLManager/XMLManager.h
 
-/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/pugiconfig.hpp
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataBaseManager/XMLManager/pugiconfig.hpp
 
-/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/pugixml.cpp
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataBaseManager/XMLManager/pugixml.cpp
 pugixml.hpp
-/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/pugixml.hpp
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataBaseManager/XMLManager/pugixml.hpp
 stdlib.h
 -
 stdio.h
@@ -80,9 +80,9 @@ new
 stdint.h
 -
 
-/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/pugixml.hpp
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataBaseManager/XMLManager/pugixml.hpp
 pugiconfig.hpp
-/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/pugiconfig.hpp
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/DataBaseManager/XMLManager/pugiconfig.hpp
 stddef.h
 -
 exception

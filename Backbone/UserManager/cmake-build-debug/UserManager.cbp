@@ -90,6 +90,18 @@
 		<Unit filename="/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/AlphabeticTree/AlphaTree.h">
 			<Option target="UserManager"/>
 		</Unit>
+		<Unit filename="/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/BTree/BTree.cpp">
+			<Option target="UserManager"/>
+		</Unit>
+		<Unit filename="/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/BTree/BTree.h">
+			<Option target="UserManager"/>
+		</Unit>
+		<Unit filename="/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataBaseManager.cpp">
+			<Option target="UserManager"/>
+		</Unit>
+		<Unit filename="/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataBaseManager.h">
+			<Option target="UserManager"/>
+		</Unit>
 		<Unit filename="/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataManager/JSONManager.cpp">
 			<Option target="UserManager"/>
 		</Unit>
@@ -100,12 +112,6 @@
 			<Option target="UserManager"/>
 		</Unit>
 		<Unit filename="/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/HashFunct/HashClass.h">
-			<Option target="UserManager"/>
-		</Unit>
-		<Unit filename="/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/UserManager.cpp">
-			<Option target="UserManager"/>
-		</Unit>
-		<Unit filename="/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/UserManager.h">
 			<Option target="UserManager"/>
 		</Unit>
 		<Unit filename="/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLManager.cpp">

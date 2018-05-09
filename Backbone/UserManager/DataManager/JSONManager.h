@@ -33,6 +33,8 @@ public:
 
     void saveData();
 
+    void updateData(json data);
+
 };
 
 

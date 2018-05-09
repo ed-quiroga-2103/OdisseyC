@@ -20,6 +20,8 @@ json JSONManager::newUser(string username, string pass, string name, string age,
     user["name"] = name;
     user["age"] = age;
     user["genres"] = genres;
+    user["friends"] = {};
+    user["pending"] = {};
 
     return user;
 }
@@ -63,6 +65,8 @@ void JSONManager::saveData() {
 
     std::ofstream out;
 
+    remove(PATH.c_str());
+
     out.open (PATH, std::ofstream::in);
 
     out.write(this->data.dump().c_str(),this->data.dump().size());
@@ -76,5 +80,11 @@ bool JSONManager::dataExists() {
     std::ifstream infile(PATH);
     return infile.good();
 
+
+}
+
+void JSONManager::updateData(json data) {
+
+    this->data = data;
 
 }

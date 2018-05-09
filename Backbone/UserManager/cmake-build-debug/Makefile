@@ -150,6 +150,60 @@ AlphabeticTree/AlphaTree.cpp.s:
 	$(MAKE) -f CMakeFiles/UserManager.dir/build.make CMakeFiles/UserManager.dir/AlphabeticTree/AlphaTree.cpp.s
 .PHONY : AlphabeticTree/AlphaTree.cpp.s
 
+BTree/BTree.o: BTree/BTree.cpp.o
+
+.PHONY : BTree/BTree.o
+
+# target to build an object file
+BTree/BTree.cpp.o:
+	$(MAKE) -f CMakeFiles/UserManager.dir/build.make CMakeFiles/UserManager.dir/BTree/BTree.cpp.o
+.PHONY : BTree/BTree.cpp.o
+
+BTree/BTree.i: BTree/BTree.cpp.i
+
+.PHONY : BTree/BTree.i
+
+# target to preprocess a source file
+BTree/BTree.cpp.i:
+	$(MAKE) -f CMakeFiles/UserManager.dir/build.make CMakeFiles/UserManager.dir/BTree/BTree.cpp.i
+.PHONY : BTree/BTree.cpp.i
+
+BTree/BTree.s: BTree/BTree.cpp.s
+
+.PHONY : BTree/BTree.s
+
+# target to generate assembly for a file
+BTree/BTree.cpp.s:
+	$(MAKE) -f CMakeFiles/UserManager.dir/build.make CMakeFiles/UserManager.dir/BTree/BTree.cpp.s
+.PHONY : BTree/BTree.cpp.s
+
+DataBaseManager.o: DataBaseManager.cpp.o
+
+.PHONY : DataBaseManager.o
+
+# target to build an object file
+DataBaseManager.cpp.o:
+	$(MAKE) -f CMakeFiles/UserManager.dir/build.make CMakeFiles/UserManager.dir/DataBaseManager.cpp.o
+.PHONY : DataBaseManager.cpp.o
+
+DataBaseManager.i: DataBaseManager.cpp.i
+
+.PHONY : DataBaseManager.i
+
+# target to preprocess a source file
+DataBaseManager.cpp.i:
+	$(MAKE) -f CMakeFiles/UserManager.dir/build.make CMakeFiles/UserManager.dir/DataBaseManager.cpp.i
+.PHONY : DataBaseManager.cpp.i
+
+DataBaseManager.s: DataBaseManager.cpp.s
+
+.PHONY : DataBaseManager.s
+
+# target to generate assembly for a file
+DataBaseManager.cpp.s:
+	$(MAKE) -f CMakeFiles/UserManager.dir/build.make CMakeFiles/UserManager.dir/DataBaseManager.cpp.s
+.PHONY : DataBaseManager.cpp.s
+
 DataManager/JSONManager.o: DataManager/JSONManager.cpp.o
 
 .PHONY : DataManager/JSONManager.o
@@ -203,33 +257,6 @@ HashFunct/HashClass.s: HashFunct/HashClass.cpp.s
 HashFunct/HashClass.cpp.s:
 	$(MAKE) -f CMakeFiles/UserManager.dir/build.make CMakeFiles/UserManager.dir/HashFunct/HashClass.cpp.s
 .PHONY : HashFunct/HashClass.cpp.s
-
-UserManager.o: UserManager.cpp.o
-
-.PHONY : UserManager.o
-
-# target to build an object file
-UserManager.cpp.o:
-	$(MAKE) -f CMakeFiles/UserManager.dir/build.make CMakeFiles/UserManager.dir/UserManager.cpp.o
-.PHONY : UserManager.cpp.o
-
-UserManager.i: UserManager.cpp.i
-
-.PHONY : UserManager.i
-
-# target to preprocess a source file
-UserManager.cpp.i:
-	$(MAKE) -f CMakeFiles/UserManager.dir/build.make CMakeFiles/UserManager.dir/UserManager.cpp.i
-.PHONY : UserManager.cpp.i
-
-UserManager.s: UserManager.cpp.s
-
-.PHONY : UserManager.s
-
-# target to generate assembly for a file
-UserManager.cpp.s:
-	$(MAKE) -f CMakeFiles/UserManager.dir/build.make CMakeFiles/UserManager.dir/UserManager.cpp.s
-.PHONY : UserManager.cpp.s
 
 XMLManager/XMLManager.o: XMLManager/XMLManager.cpp.o
 
@@ -351,15 +378,18 @@ help:
 	@echo "... AlphabeticTree/AlphaTree.o"
 	@echo "... AlphabeticTree/AlphaTree.i"
 	@echo "... AlphabeticTree/AlphaTree.s"
+	@echo "... BTree/BTree.o"
+	@echo "... BTree/BTree.i"
+	@echo "... BTree/BTree.s"
+	@echo "... DataBaseManager.o"
+	@echo "... DataBaseManager.i"
+	@echo "... DataBaseManager.s"
 	@echo "... DataManager/JSONManager.o"
 	@echo "... DataManager/JSONManager.i"
 	@echo "... DataManager/JSONManager.s"
 	@echo "... HashFunct/HashClass.o"
 	@echo "... HashFunct/HashClass.i"
 	@echo "... HashFunct/HashClass.s"
-	@echo "... UserManager.o"
-	@echo "... UserManager.i"
-	@echo "... UserManager.s"
 	@echo "... XMLManager/XMLManager.o"
 	@echo "... XMLManager/XMLManager.i"
 	@echo "... XMLManager/XMLManager.s"

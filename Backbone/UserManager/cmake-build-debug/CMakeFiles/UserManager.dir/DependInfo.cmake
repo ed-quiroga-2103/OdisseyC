@@ -5,9 +5,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/AlphabeticTree/AlphaTree.cpp" "/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/cmake-build-debug/CMakeFiles/UserManager.dir/AlphabeticTree/AlphaTree.cpp.o"
+  "/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/BTree/BTree.cpp" "/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/cmake-build-debug/CMakeFiles/UserManager.dir/BTree/BTree.cpp.o"
+  "/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataBaseManager.cpp" "/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/cmake-build-debug/CMakeFiles/UserManager.dir/DataBaseManager.cpp.o"
   "/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataManager/JSONManager.cpp" "/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/cmake-build-debug/CMakeFiles/UserManager.dir/DataManager/JSONManager.cpp.o"
   "/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/HashFunct/HashClass.cpp" "/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/cmake-build-debug/CMakeFiles/UserManager.dir/HashFunct/HashClass.cpp.o"
-  "/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/UserManager.cpp" "/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/cmake-build-debug/CMakeFiles/UserManager.dir/UserManager.cpp.o"
   "/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLManager.cpp" "/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/cmake-build-debug/CMakeFiles/UserManager.dir/XMLManager/XMLManager.cpp.o"
   "/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLParts.cpp" "/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/cmake-build-debug/CMakeFiles/UserManager.dir/XMLManager/XMLParts.cpp.o"
   "/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/pugixml.cpp" "/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/cmake-build-debug/CMakeFiles/UserManager.dir/XMLManager/pugixml.cpp.o"
