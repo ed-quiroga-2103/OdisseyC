@@ -84,6 +84,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/AVLTree/AVLTree.h">
+			<Option target="UserManager"/>
+		</Unit>
 		<Unit filename="/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/AlphabeticTree/AlphaTree.cpp">
 			<Option target="UserManager"/>
 		</Unit>
@@ -106,6 +109,15 @@
 			<Option target="UserManager"/>
 		</Unit>
 		<Unit filename="/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataManager/JSONManager.h">
+			<Option target="UserManager"/>
+		</Unit>
+		<Unit filename="/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataStructs/DataStructures.cpp">
+			<Option target="UserManager"/>
+		</Unit>
+		<Unit filename="/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataStructs/DataStructures.h">
+			<Option target="UserManager"/>
+		</Unit>
+		<Unit filename="/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataStructs/DataStructures.tpp">
 			<Option target="UserManager"/>
 		</Unit>
 		<Unit filename="/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/HashFunct/HashClass.cpp">

@@ -201,9 +201,33 @@ CMakeFiles/UserManager.dir/XMLManager/XMLParts.cpp.o.provides: CMakeFiles/UserMa
 CMakeFiles/UserManager.dir/XMLManager/XMLParts.cpp.o.provides.build: CMakeFiles/UserManager.dir/XMLManager/XMLParts.cpp.o
 
 
+CMakeFiles/UserManager.dir/DataStructs/DataStructures.cpp.o: CMakeFiles/UserManager.dir/flags.make
+CMakeFiles/UserManager.dir/DataStructs/DataStructures.cpp.o: ../DataStructs/DataStructures.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/UserManager.dir/DataStructs/DataStructures.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UserManager.dir/DataStructs/DataStructures.cpp.o -c "/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataStructs/DataStructures.cpp"
+
+CMakeFiles/UserManager.dir/DataStructs/DataStructures.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UserManager.dir/DataStructs/DataStructures.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataStructs/DataStructures.cpp" > CMakeFiles/UserManager.dir/DataStructs/DataStructures.cpp.i
+
+CMakeFiles/UserManager.dir/DataStructs/DataStructures.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UserManager.dir/DataStructs/DataStructures.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataStructs/DataStructures.cpp" -o CMakeFiles/UserManager.dir/DataStructs/DataStructures.cpp.s
+
+CMakeFiles/UserManager.dir/DataStructs/DataStructures.cpp.o.requires:
+
+.PHONY : CMakeFiles/UserManager.dir/DataStructs/DataStructures.cpp.o.requires
+
+CMakeFiles/UserManager.dir/DataStructs/DataStructures.cpp.o.provides: CMakeFiles/UserManager.dir/DataStructs/DataStructures.cpp.o.requires
+	$(MAKE) -f CMakeFiles/UserManager.dir/build.make CMakeFiles/UserManager.dir/DataStructs/DataStructures.cpp.o.provides.build
+.PHONY : CMakeFiles/UserManager.dir/DataStructs/DataStructures.cpp.o.provides
+
+CMakeFiles/UserManager.dir/DataStructs/DataStructures.cpp.o.provides.build: CMakeFiles/UserManager.dir/DataStructs/DataStructures.cpp.o
+
+
 CMakeFiles/UserManager.dir/XMLManager/XMLManager.cpp.o: CMakeFiles/UserManager.dir/flags.make
 CMakeFiles/UserManager.dir/XMLManager/XMLManager.cpp.o: ../XMLManager/XMLManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/UserManager.dir/XMLManager/XMLManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/UserManager.dir/XMLManager/XMLManager.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UserManager.dir/XMLManager/XMLManager.cpp.o -c "/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/XMLManager.cpp"
 
 CMakeFiles/UserManager.dir/XMLManager/XMLManager.cpp.i: cmake_force
@@ -227,7 +251,7 @@ CMakeFiles/UserManager.dir/XMLManager/XMLManager.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/UserManager.dir/AlphabeticTree/AlphaTree.cpp.o: CMakeFiles/UserManager.dir/flags.make
 CMakeFiles/UserManager.dir/AlphabeticTree/AlphaTree.cpp.o: ../AlphabeticTree/AlphaTree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/UserManager.dir/AlphabeticTree/AlphaTree.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/UserManager.dir/AlphabeticTree/AlphaTree.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UserManager.dir/AlphabeticTree/AlphaTree.cpp.o -c "/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/AlphabeticTree/AlphaTree.cpp"
 
 CMakeFiles/UserManager.dir/AlphabeticTree/AlphaTree.cpp.i: cmake_force
@@ -251,7 +275,7 @@ CMakeFiles/UserManager.dir/AlphabeticTree/AlphaTree.cpp.o.provides.build: CMakeF
 
 CMakeFiles/UserManager.dir/BTree/BTree.cpp.o: CMakeFiles/UserManager.dir/flags.make
 CMakeFiles/UserManager.dir/BTree/BTree.cpp.o: ../BTree/BTree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/UserManager.dir/BTree/BTree.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/UserManager.dir/BTree/BTree.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UserManager.dir/BTree/BTree.cpp.o -c "/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/BTree/BTree.cpp"
 
 CMakeFiles/UserManager.dir/BTree/BTree.cpp.i: cmake_force
@@ -281,6 +305,7 @@ UserManager_OBJECTS = \
 "CMakeFiles/UserManager.dir/HashFunct/HashClass.cpp.o" \
 "CMakeFiles/UserManager.dir/DataManager/JSONManager.cpp.o" \
 "CMakeFiles/UserManager.dir/XMLManager/XMLParts.cpp.o" \
+"CMakeFiles/UserManager.dir/DataStructs/DataStructures.cpp.o" \
 "CMakeFiles/UserManager.dir/XMLManager/XMLManager.cpp.o" \
 "CMakeFiles/UserManager.dir/AlphabeticTree/AlphaTree.cpp.o" \
 "CMakeFiles/UserManager.dir/BTree/BTree.cpp.o"
@@ -294,12 +319,13 @@ UserManager: CMakeFiles/UserManager.dir/XMLManager/pugixml.cpp.o
 UserManager: CMakeFiles/UserManager.dir/HashFunct/HashClass.cpp.o
 UserManager: CMakeFiles/UserManager.dir/DataManager/JSONManager.cpp.o
 UserManager: CMakeFiles/UserManager.dir/XMLManager/XMLParts.cpp.o
+UserManager: CMakeFiles/UserManager.dir/DataStructs/DataStructures.cpp.o
 UserManager: CMakeFiles/UserManager.dir/XMLManager/XMLManager.cpp.o
 UserManager: CMakeFiles/UserManager.dir/AlphabeticTree/AlphaTree.cpp.o
 UserManager: CMakeFiles/UserManager.dir/BTree/BTree.cpp.o
 UserManager: CMakeFiles/UserManager.dir/build.make
 UserManager: CMakeFiles/UserManager.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable UserManager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable UserManager"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/UserManager.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -313,6 +339,7 @@ CMakeFiles/UserManager.dir/requires: CMakeFiles/UserManager.dir/XMLManager/pugix
 CMakeFiles/UserManager.dir/requires: CMakeFiles/UserManager.dir/HashFunct/HashClass.cpp.o.requires
 CMakeFiles/UserManager.dir/requires: CMakeFiles/UserManager.dir/DataManager/JSONManager.cpp.o.requires
 CMakeFiles/UserManager.dir/requires: CMakeFiles/UserManager.dir/XMLManager/XMLParts.cpp.o.requires
+CMakeFiles/UserManager.dir/requires: CMakeFiles/UserManager.dir/DataStructs/DataStructures.cpp.o.requires
 CMakeFiles/UserManager.dir/requires: CMakeFiles/UserManager.dir/XMLManager/XMLManager.cpp.o.requires
 CMakeFiles/UserManager.dir/requires: CMakeFiles/UserManager.dir/AlphabeticTree/AlphaTree.cpp.o.requires
 CMakeFiles/UserManager.dir/requires: CMakeFiles/UserManager.dir/BTree/BTree.cpp.o.requires

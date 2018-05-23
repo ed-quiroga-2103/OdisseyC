@@ -231,6 +231,33 @@ DataManager/JSONManager.cpp.s:
 	$(MAKE) -f CMakeFiles/UserManager.dir/build.make CMakeFiles/UserManager.dir/DataManager/JSONManager.cpp.s
 .PHONY : DataManager/JSONManager.cpp.s
 
+DataStructs/DataStructures.o: DataStructs/DataStructures.cpp.o
+
+.PHONY : DataStructs/DataStructures.o
+
+# target to build an object file
+DataStructs/DataStructures.cpp.o:
+	$(MAKE) -f CMakeFiles/UserManager.dir/build.make CMakeFiles/UserManager.dir/DataStructs/DataStructures.cpp.o
+.PHONY : DataStructs/DataStructures.cpp.o
+
+DataStructs/DataStructures.i: DataStructs/DataStructures.cpp.i
+
+.PHONY : DataStructs/DataStructures.i
+
+# target to preprocess a source file
+DataStructs/DataStructures.cpp.i:
+	$(MAKE) -f CMakeFiles/UserManager.dir/build.make CMakeFiles/UserManager.dir/DataStructs/DataStructures.cpp.i
+.PHONY : DataStructs/DataStructures.cpp.i
+
+DataStructs/DataStructures.s: DataStructs/DataStructures.cpp.s
+
+.PHONY : DataStructs/DataStructures.s
+
+# target to generate assembly for a file
+DataStructs/DataStructures.cpp.s:
+	$(MAKE) -f CMakeFiles/UserManager.dir/build.make CMakeFiles/UserManager.dir/DataStructs/DataStructures.cpp.s
+.PHONY : DataStructs/DataStructures.cpp.s
+
 HashFunct/HashClass.o: HashFunct/HashClass.cpp.o
 
 .PHONY : HashFunct/HashClass.o
@@ -387,6 +414,9 @@ help:
 	@echo "... DataManager/JSONManager.o"
 	@echo "... DataManager/JSONManager.i"
 	@echo "... DataManager/JSONManager.s"
+	@echo "... DataStructs/DataStructures.o"
+	@echo "... DataStructs/DataStructures.i"
+	@echo "... DataStructs/DataStructures.s"
 	@echo "... HashFunct/HashClass.o"
 	@echo "... HashFunct/HashClass.i"
 	@echo "... HashFunct/HashClass.s"

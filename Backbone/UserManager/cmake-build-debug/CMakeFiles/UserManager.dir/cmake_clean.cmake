@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/UserManager.dir/HashFunct/HashClass.cpp.o"
   "CMakeFiles/UserManager.dir/DataManager/JSONManager.cpp.o"
   "CMakeFiles/UserManager.dir/XMLManager/XMLParts.cpp.o"
+  "CMakeFiles/UserManager.dir/DataStructs/DataStructures.cpp.o"
   "CMakeFiles/UserManager.dir/XMLManager/XMLManager.cpp.o"
   "CMakeFiles/UserManager.dir/AlphabeticTree/AlphaTree.cpp.o"
   "CMakeFiles/UserManager.dir/BTree/BTree.cpp.o"

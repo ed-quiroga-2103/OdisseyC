@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/AVLTree/AVLTree.h
+stdio.h
+-
+stdlib.h
+-
+string
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/AVLTree/string
+
 /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/AlphabeticTree/AlphaTree.cpp
 AlphaTree.h
 /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/AlphabeticTree/AlphaTree.h
@@ -39,6 +47,10 @@ HashFunct/HashClass.h
 /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/HashFunct/HashClass.h
 AlphabeticTree/AlphaTree.h
 /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/AlphabeticTree/AlphaTree.h
+DataStructs/DataStructures.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataStructs/DataStructures.h
+../AVLTree/AVLTree.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/AVLTree/AVLTree.h
 string
 /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/string
 BTree/BTree.h
@@ -333,6 +345,10 @@ vector
 -
 utility
 -
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataStructs/DataStructures.cpp
+DataStructures.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataStructs/DataStructures.h
 
 /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataStructs/DataStructures.h
 cstdlib

@@ -8,6 +8,7 @@ CMakeFiles/UserManager.dir/BTree/BTree.cpp.o
  /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/BTree/BTree.cpp
  /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/BTree/BTree.h
 CMakeFiles/UserManager.dir/DataBaseManager.cpp.o
+ /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/AVLTree/AVLTree.h
  /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/AlphabeticTree/AlphaTree.h
  /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/BTree/BTree.h
  /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataBaseManager.cpp
@@ -25,6 +26,10 @@ CMakeFiles/UserManager.dir/DataManager/JSONManager.cpp.o
  /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataManager/JSONManager.cpp
  /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataManager/JSONManager.h
  /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataManager/nlohmann/json.hpp
+CMakeFiles/UserManager.dir/DataStructs/DataStructures.cpp.o
+ /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataStructs/DataStructures.cpp
+ /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataStructs/DataStructures.h
+ /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataStructs/DataStructures.tpp
 CMakeFiles/UserManager.dir/HashFunct/HashClass.cpp.o
  /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataStructs/DataStructures.h
  /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataStructs/DataStructures.tpp
@@ -46,6 +51,7 @@ CMakeFiles/UserManager.dir/XMLManager/pugixml.cpp.o
  /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/pugixml.cpp
  /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/XMLManager/pugixml.hpp
 CMakeFiles/UserManager.dir/main.cpp.o
+ /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/AVLTree/AVLTree.h
  /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/AlphabeticTree/AlphaTree.h
  /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/BTree/BTree.h
  /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataBaseManager.h

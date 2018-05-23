@@ -7,8 +7,8 @@
 
 DataBaseManager::DataBaseManager() {
 
-    JManager->loadJSON();
-    SongManager->loadJSON();
+    this->JManager->loadJSON();
+    this->SongManager->loadJSON();
     this->loadTree();
 
 }
@@ -26,16 +26,28 @@ void DataBaseManager::recieveData(string data) {
     }
     else if(opnum == 1){
 
-        this->validateUser(CData);
+        if(this->validateUser(CData)){
+
+            std::cout << makeAnswerXML(1);
+
+        } else {
+
+            std::cout << "No user";
+        }
 
     }
     else if(opnum == 2){
 
-        this->registerSong(CData);
+        std::cout << this->registerSong(CData);
     }
     else if(opnum == 3){
 
         std::cout << this->deleteSong(CData);
+    }
+    else if (opnum == 4){
+
+        std::cout << this->modifySong(CData);
+
     }
     else if(opnum == 5){
 
@@ -87,6 +99,9 @@ bool DataBaseManager::validateUser(string data) {
 
 
             cout<< "yes";
+
+            currentUser = j["username"];
+
             return true;
 
         }
@@ -122,9 +137,10 @@ string DataBaseManager::registerSong(string data) {
 
         this->SongManager->saveData();
 
+        return "Song saved";
     }
     else{
-        cout << "Song exists\n";
+        return "Song exists\n";
     }
 
 }
@@ -171,6 +187,8 @@ void DataBaseManager::loadTree() {
     for(int i = 0 ; i < songs.size(); i++){
 
         songNames->insert(songs[i]["song"]);
+        albumList.newNode(songs[i]["album"]);
+        //artistTree = artistTree->insert(artistTree, songs[i]["artist"]);
 
     }
 
@@ -182,7 +200,9 @@ string DataBaseManager::friendFunct(string data) {
 
     if(UsersTree.exists(j["friend"])){
 
-        TreeNode *node = UsersTree.findNode(j["user"]);
+        string a = j["user"];
+
+        TreeNode *node = UsersTree.findNode(a);
 
         int ind = node->getInd();
 
@@ -212,11 +232,11 @@ string DataBaseManager::friendFunct(string data) {
 
         std::cout << "Pending saved"<< endl;
 
-        std::cout << user;
+        return user.dump();
 
     }
 
-    else std::cout << "User doesnt exists";
+    return "User doesnt exists";
 
 }
 
@@ -265,6 +285,118 @@ string DataBaseManager::deleteSong(string data) {
 
     }
 
-    return "hola";
+    return "Song doesnt exist";
 
 }
+
+string DataBaseManager::modifySong(string data) {
+
+    json j = json::parse(data);
+
+    json songs = SongManager->getData();
+
+    string current;
+
+    for(int i = 0; i < songs.size(); i++){
+
+        current = songs[i]["song"];
+
+        if(current == j["song"]){
+
+            json data = SongManager->getData();
+
+            json song  = data[i];
+
+            data.erase(i);
+
+            song["song"] = j["newName"];
+
+            song["artist"] = j["artist"];
+
+            song["lyrics"] = j["lyrics"];
+
+            song["album"] = j["album"];
+
+            data[data.size()] = song;
+
+            SongManager->updateData(data);
+
+            SongManager->saveData();
+            return "Song updated";
+        }
+
+    }
+
+    return "Song doesnt exist";
+
+}
+
+string DataBaseManager::makeSongStream(){
+
+    std::stringstream stream;
+    json songs = SongManager->getData();
+
+
+    for(int i = 0 ; i < songs.size(); i++) {
+
+        stream << "Song: " << songs[i]["song"];
+        stream << "- Artist: " << songs[i]["artist"];
+        stream << "- Album: " << songs[i]["album"];
+        stream << "\n";
+
+    }
+
+    return stream.str();
+
+}
+
+string DataBaseManager::makeAnswerXML(int opnum) {
+
+    json users = JManager->getData();
+
+    if(opnum == 0){
+
+    }
+    else {
+        json JSON;
+
+        JSON["songs"] = makeSongStream();
+
+        std::stringstream stream;
+
+        for(int i = 0 ; i < users.size(); i++){
+
+            json current = users[i];
+
+            if(current["username"]==currentUser){
+                json json1 = current["pending"];
+
+                if(json1 != NULL) {
+                    for (int j = 0; j < current["pending"].size(); j++) {
+
+                        stream << users[i]["pending"][j];
+                        stream << "\n";
+
+                    }
+
+                    JSON["pending"] = stream.str();
+                }
+                else{
+
+                    JSON["pending"] = "No pending messages";
+
+                }
+                break;
+            }
+        }
+
+        XMLDoc doc(0);
+
+        doc.newChild(opnum, JSON.dump());
+
+        return doc.toString();
+
+    }
+
+}
+

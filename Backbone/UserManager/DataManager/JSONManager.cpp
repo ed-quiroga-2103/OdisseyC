@@ -44,10 +44,12 @@ void JSONManager::loadJSON() {
         std::ifstream i(PATH);
 
         i >> this->data;
+        i.close();
     }
     else{
 
         std::ofstream outfile (PATH);
+        outfile.close();
     }
 }
 
@@ -65,9 +67,7 @@ void JSONManager::saveData() {
 
     std::ofstream out;
 
-    remove(PATH.c_str());
-
-    out.open (PATH, std::ofstream::in);
+    out.open (PATH);
 
     out.write(this->data.dump().c_str(),this->data.dump().size());
 

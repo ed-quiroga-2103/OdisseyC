@@ -10,7 +10,11 @@ using string = std::string;
 
 int main() {
 
-    DataBaseManager um;
+    DataBaseManager* um = new DataBaseManager();
+
+
+    //std::cout << um->makeSongStream();
+
 
     JSONManager jm("");
 
@@ -18,9 +22,11 @@ int main() {
 
     json j;
 
-    j = jm.newSong("Goodbye Angels","sdf","asdfa","asdfa");
+    j["username"] = "user";
+    j["pass"] = "user";
 
-    doc.newChild(2, j.dump());
+
+    doc.newChild(1, j.dump());
 /*
     XMLDoc dec(0);
     JSONManager jm("");
@@ -30,9 +36,8 @@ int main() {
 
 
 
-    um.recieveData(doc.toString());
+      um->recieveData(doc.toString());
     //um.recieveData(dec.toString());
-
 
 
 

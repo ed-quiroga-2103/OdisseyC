@@ -7,6 +7,7 @@ CMakeFiles/UserManager.dir/AlphabeticTree/AlphaTree.cpp.o: ../AlphabeticTree/Alp
 CMakeFiles/UserManager.dir/BTree/BTree.cpp.o: ../BTree/BTree.cpp
 CMakeFiles/UserManager.dir/BTree/BTree.cpp.o: ../BTree/BTree.h
 
+CMakeFiles/UserManager.dir/DataBaseManager.cpp.o: /home/eduardo/Documents/Datos\ II/Proyecto\ 2/Backbone/AVLTree/AVLTree.h
 CMakeFiles/UserManager.dir/DataBaseManager.cpp.o: ../AlphabeticTree/AlphaTree.h
 CMakeFiles/UserManager.dir/DataBaseManager.cpp.o: ../BTree/BTree.h
 CMakeFiles/UserManager.dir/DataBaseManager.cpp.o: ../DataBaseManager.cpp
@@ -24,6 +25,10 @@ CMakeFiles/UserManager.dir/DataBaseManager.cpp.o: ../XMLManager/pugixml.hpp
 CMakeFiles/UserManager.dir/DataManager/JSONManager.cpp.o: ../DataManager/JSONManager.cpp
 CMakeFiles/UserManager.dir/DataManager/JSONManager.cpp.o: ../DataManager/JSONManager.h
 CMakeFiles/UserManager.dir/DataManager/JSONManager.cpp.o: ../DataManager/nlohmann/json.hpp
+
+CMakeFiles/UserManager.dir/DataStructs/DataStructures.cpp.o: ../DataStructs/DataStructures.cpp
+CMakeFiles/UserManager.dir/DataStructs/DataStructures.cpp.o: ../DataStructs/DataStructures.h
+CMakeFiles/UserManager.dir/DataStructs/DataStructures.cpp.o: ../DataStructs/DataStructures.tpp
 
 CMakeFiles/UserManager.dir/HashFunct/HashClass.cpp.o: ../DataStructs/DataStructures.h
 CMakeFiles/UserManager.dir/HashFunct/HashClass.cpp.o: ../DataStructs/DataStructures.tpp
@@ -45,6 +50,7 @@ CMakeFiles/UserManager.dir/XMLManager/pugixml.cpp.o: ../XMLManager/pugiconfig.hp
 CMakeFiles/UserManager.dir/XMLManager/pugixml.cpp.o: ../XMLManager/pugixml.cpp
 CMakeFiles/UserManager.dir/XMLManager/pugixml.cpp.o: ../XMLManager/pugixml.hpp
 
+CMakeFiles/UserManager.dir/main.cpp.o: /home/eduardo/Documents/Datos\ II/Proyecto\ 2/Backbone/AVLTree/AVLTree.h
 CMakeFiles/UserManager.dir/main.cpp.o: ../AlphabeticTree/AlphaTree.h
 CMakeFiles/UserManager.dir/main.cpp.o: ../BTree/BTree.h
 CMakeFiles/UserManager.dir/main.cpp.o: ../DataBaseManager.h

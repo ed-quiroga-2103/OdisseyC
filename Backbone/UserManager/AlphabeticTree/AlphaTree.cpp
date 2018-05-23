@@ -115,7 +115,7 @@ TreeNode *AlphaTree::findNode(string data) {
             current = current->getLeftchild();
 
         }
-        else if(data < current->getData()) {
+        else if(data > current->getData()) {
 
             current = current->getRightchild();
         }
