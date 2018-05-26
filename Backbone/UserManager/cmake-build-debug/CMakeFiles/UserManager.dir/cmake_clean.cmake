@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/UserManager.dir/main.cpp.o"
   "CMakeFiles/UserManager.dir/DataBaseManager.cpp.o"
   "CMakeFiles/UserManager.dir/XMLManager/pugixml.cpp.o"
+  "CMakeFiles/UserManager.dir/GenericServer/mainServer.cpp.o"
   "CMakeFiles/UserManager.dir/HashFunct/HashClass.cpp.o"
   "CMakeFiles/UserManager.dir/DataManager/JSONManager.cpp.o"
   "CMakeFiles/UserManager.dir/XMLManager/XMLParts.cpp.o"

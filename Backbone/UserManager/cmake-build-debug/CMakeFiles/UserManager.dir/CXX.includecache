@@ -366,6 +366,28 @@ cstdlib
 iostream
 -
 
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/GenericServer/mainServer.cpp
+iostream
+-
+mainServer.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/GenericServer/mainServer.h
+
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/GenericServer/mainServer.h
+stdio.h
+-
+string.h
+-
+sys/socket.h
+-
+arpa/inet.h
+-
+unistd.h
+-
+string
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/GenericServer/string
+../DataBaseManager.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataBaseManager.h
+
 /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/HashFunct/HashClass.cpp
 sstream
 -
@@ -467,4 +489,6 @@ BTree/BTree.h
 /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/BTree/BTree.h
 string
 /home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/string
+GenericServer/mainServer.h
+/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/GenericServer/mainServer.h
 

@@ -36,6 +36,8 @@ private:
     AVLTree* artistTree = NULL;
     //User thats logged in at the moment
     string currentUser;
+    //First song ind
+    int firstSong = 0;
 
 public:
     DataBaseManager();
@@ -44,7 +46,7 @@ public:
  * Function in charge of receiving the data through the server socket
  * @param data (XML from server)
  */
-    void recieveData(string data);
+    string recieveData(string data);
 /***
  * Function in charge of loading all data to the respective trees when the server is initialized
  */
@@ -60,33 +62,41 @@ public:
      * Returns a string with all the songs, arranged in chronological order
      * @return string
      */
-    string makeSongStream();
+    string makeSongStream(int page);
 //------------------------------------------User management---------------------------------------------------------
 
-/***
- * Registers user in data
- * @param data (CDATA from server)
- * @return
- */
+    /***
+     * Registers user in data
+     * @param data (CDATA from server)
+     * @return
+     */
     string registerUser(string data);
     /***
      * Checks if a user exist and if the password is right
      * @param data (CDATA from server)
      * @return
      */
-    bool validateUser(string data);
+    string validateUser(string data);
     /***
-     * Adds a friend to the friend list and adds a message to the pending message list
+     * Adds a message to the pending message list
      * @param data
      * @return
      */
-    string friendFunct(string data);
+    string recommendSong(string data);
     /***
      * Returns a basic answer XML with the user data and the song data
      * @param opnum
      * @return
      */
     string makeAnswerXML(int opnum);
+    /***
+     *
+     *Adds a friend to the friends list
+     * @param data
+     * @return
+     *
+     */
+    string addFriend(string data);
 
 //------------------------------------------Song management---------------------------------------------------------
 /***

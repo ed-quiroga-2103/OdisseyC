@@ -120,6 +120,12 @@
 		<Unit filename="/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/DataStructs/DataStructures.tpp">
 			<Option target="UserManager"/>
 		</Unit>
+		<Unit filename="/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/GenericServer/mainServer.cpp">
+			<Option target="UserManager"/>
+		</Unit>
+		<Unit filename="/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/GenericServer/mainServer.h">
+			<Option target="UserManager"/>
+		</Unit>
 		<Unit filename="/home/eduardo/Documents/Datos II/Proyecto 2/Backbone/UserManager/HashFunct/HashClass.cpp">
 			<Option target="UserManager"/>
 		</Unit>

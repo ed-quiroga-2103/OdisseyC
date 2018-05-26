@@ -13,7 +13,7 @@ DataBaseManager::DataBaseManager() {
 
 }
 
-void DataBaseManager::recieveData(string data) {
+string DataBaseManager::recieveData(string data) {
     //The XML build is missing from the answering comunication
 
     string CData = this->XManager->getCDATA(data);
@@ -21,47 +21,56 @@ void DataBaseManager::recieveData(string data) {
 
     if(opnum == 0){
 
-        std::cout << this->registerUser(CData);
+        return this->registerUser(CData);
 
     }
     else if(opnum == 1){
 
-        if(this->validateUser(CData)){
-
-            std::cout << makeAnswerXML(1);
-
-        } else {
-
-            std::cout << "No user";
-        }
+        return this->validateUser(CData);
 
     }
     else if(opnum == 2){
 
-        std::cout << this->registerSong(CData);
+        return this->registerSong(CData);
+
     }
     else if(opnum == 3){
 
-        std::cout << this->deleteSong(CData);
+        return this->deleteSong(CData);
     }
     else if (opnum == 4){
 
-        std::cout << this->modifySong(CData);
+        return this->modifySong(CData);
 
     }
     else if(opnum == 5){
 
-        std::cout << this->searchSongByName(CData);
+        return  this->searchSongByName(CData);
 
     }
     else if(opnum == 9){
 
-        this->friendFunct(CData);
+        this->addFriend(CData);
+
+    }
+    else if (opnum == 10){
+
+        this->recommendSong(CData);
+
+    }
+    else if (opnum == 98){
+
+        json j = json::parse(CData);
+
+        int page = j["page"];
+
+        return makeSongStream(page);
 
     }
 
 }
 
+//Answer: True and registered, or False and modify data DONE
 string DataBaseManager::registerUser(string data) {
 
     json j = json::parse(data);
@@ -78,15 +87,25 @@ string DataBaseManager::registerUser(string data) {
 
         this->JManager->saveData();
 
-        return user.dump();
+        json msg;
+
+        msg["confirmation"] = true;
+
+        return msg.dump();
     }
     else{
-        return "User exists\n";
+
+        json msg;
+
+        msg["confirmation"] = false;
+
+        return msg.dump();
     }
 
 }
 
-bool DataBaseManager::validateUser(string data) {
+//True or False on log in DONE
+string DataBaseManager::validateUser(string data) {
 
     json j = json::parse(data);
 
@@ -98,30 +117,35 @@ bool DataBaseManager::validateUser(string data) {
         if(user["pass"] == Hasher.hash(j["pass"])){
 
 
-            cout<< "yes";
 
             currentUser = j["username"];
 
-            return true;
+            json msg;
 
+            msg["confirmation"] = 1;
+
+            return msg.dump();
         }
         else{
-            cout<< "no";
 
-            return false;
+            json msg;
 
+            msg["confirmation"] = 0;
+
+            return msg.dump();
         }
+    }else{
+
+        json msg;
+
+        msg["confirmation"] = 0;
+
+        return msg.dump();
 
     }
-    else{
-
-        cout<< "User doesnt exists";
-
-    }
-
-    return false;
 }
 
+//True or False, depends on existance of the song
 string DataBaseManager::registerSong(string data) {
     json j = json::parse(data);
 
@@ -137,14 +161,26 @@ string DataBaseManager::registerSong(string data) {
 
         this->SongManager->saveData();
 
-        return "Song saved";
+        json msg;
+
+        msg["confirmation"] = 1;
+
+        msg["songs"] = makeSongStream(0);
+
+        return msg.dump();
     }
     else{
-        return "Song exists\n";
+
+        json msg;
+
+        msg["confirmation"] = 0;
+
+        return msg.dump();
     }
 
 }
 
+//Returns Song data
 string DataBaseManager::searchSongByName(string data){
 
     json j = json::parse(data);
@@ -159,18 +195,21 @@ string DataBaseManager::searchSongByName(string data){
 
             json song = data[i];
             if(song["song"] == j["song"]){
-                std::cout << "Return ";
+                song["confirmation"] = 1;
                 return song.dump();
             }
         }
     }
 
     else{
-        cout << "Song doesnt exists\n";
+        json msg;
+        msg["confirmation"] = 0;
+        return msg.dump();
     }
 
 }
 
+//No Answer
 void DataBaseManager::loadTree() {
 
     json users = JManager->getData();
@@ -194,27 +233,22 @@ void DataBaseManager::loadTree() {
 
 }
 
-string DataBaseManager::friendFunct(string data) {
+//------------------------------------------------------------------------------------------------------------------------
+
+//True or False, depending on user friends
+string DataBaseManager::recommendSong(string data) {
 
     json j = json::parse(data);
 
     if(UsersTree.exists(j["friend"])){
 
-        string a = j["user"];
+        string a = j["friend"];
 
         TreeNode *node = UsersTree.findNode(a);
 
         int ind = node->getInd();
 
         json user = JManager->getData()[ind];
-
-        if(!hasFriend(user,j["friend"])){
-
-            user["friends"][user["friends"].size()] = j["friend"];
-
-            std::cout << "Friend saved" << endl;
-
-        }
 
         std::stringstream msg;
         msg << "Hey! Listen to ";
@@ -240,6 +274,42 @@ string DataBaseManager::friendFunct(string data) {
 
 }
 
+//True or False, depending on if friend exists
+string DataBaseManager::addFriend(string data) {
+
+    json j = json::parse(data);
+
+    if (UsersTree.exists(j["friend"])) {
+
+        string a = j["user"];
+
+        TreeNode *node = UsersTree.findNode(a);
+
+        int ind = node->getInd();
+
+        json user = JManager->getData()[ind];
+
+        if (!hasFriend(user, j["friend"])) {
+
+            user["friends"][user["friends"].size()] = j["friend"];
+
+            std::cout << "Friend saved" << endl;
+
+        }
+
+
+        json data = JManager->getData();
+
+        data[ind] = user;
+
+        JManager->updateData(data);
+
+        JManager->saveData();
+
+
+    }
+}
+
 bool DataBaseManager::hasFriend(json user, string newFriend) {
     string a;
     for(int i = 0; i < user["friends"].size(); i++)
@@ -255,6 +325,7 @@ bool DataBaseManager::hasFriend(json user, string newFriend) {
     return false;
 }
 
+//Confirmation of deletion of song
 string DataBaseManager::deleteSong(string data) {
 
     json j = json::parse(data);
@@ -289,6 +360,7 @@ string DataBaseManager::deleteSong(string data) {
 
 }
 
+//Confirmation on modification of song and new song data or message of failure
 string DataBaseManager::modifySong(string data) {
 
     json j = json::parse(data);
@@ -331,25 +403,34 @@ string DataBaseManager::modifySong(string data) {
 
 }
 
-string DataBaseManager::makeSongStream(){
+//No answer
+string DataBaseManager::makeSongStream(int page){
 
     std::stringstream stream;
     json songs = SongManager->getData();
 
+    json packedSongs;
 
-    for(int i = 0 ; i < songs.size(); i++) {
+    int CERO = 11*page;
 
-        stream << "Song: " << songs[i]["song"];
-        stream << "- Artist: " << songs[i]["artist"];
-        stream << "- Album: " << songs[i]["album"];
-        stream << "\n";
+    for(int i = CERO; i < (CERO)+11 && i < songs.size(); i++) {
+
+        json song;
+
+        song["song"] = songs[i]["song"];
+        song["artist"] = songs[i]["artist"];
+        song["album"] = songs[i]["album"];
+        song["lyrics"] = songs[i]["lyrics"];
+
+        packedSongs[i-(11*page)] = song;
 
     }
 
-    return stream.str();
+    return packedSongs.dump();
 
 }
 
+//No answer
 string DataBaseManager::makeAnswerXML(int opnum) {
 
     json users = JManager->getData();
@@ -360,7 +441,7 @@ string DataBaseManager::makeAnswerXML(int opnum) {
     else {
         json JSON;
 
-        JSON["songs"] = makeSongStream();
+        JSON["songs"] = makeSongStream(0);
 
         std::stringstream stream;
 

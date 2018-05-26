@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/OddServer.dir/main.cpp.o CMakeFiles/OddServer.dir/mainServer.cpp.o  -o OddServer 

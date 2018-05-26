@@ -34,6 +34,7 @@ json JSONManager::newSong(string song, string artist, string album, string lyric
     newJson["artist"] = artist;
     newJson["album"] = album;
     newJson["lyrics"] = lyrics;
+    newJson["rating"] = 0;
 
     return newJson;
 

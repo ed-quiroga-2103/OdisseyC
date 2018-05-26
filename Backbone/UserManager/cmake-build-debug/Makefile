@@ -258,6 +258,33 @@ DataStructs/DataStructures.cpp.s:
 	$(MAKE) -f CMakeFiles/UserManager.dir/build.make CMakeFiles/UserManager.dir/DataStructs/DataStructures.cpp.s
 .PHONY : DataStructs/DataStructures.cpp.s
 
+GenericServer/mainServer.o: GenericServer/mainServer.cpp.o
+
+.PHONY : GenericServer/mainServer.o
+
+# target to build an object file
+GenericServer/mainServer.cpp.o:
+	$(MAKE) -f CMakeFiles/UserManager.dir/build.make CMakeFiles/UserManager.dir/GenericServer/mainServer.cpp.o
+.PHONY : GenericServer/mainServer.cpp.o
+
+GenericServer/mainServer.i: GenericServer/mainServer.cpp.i
+
+.PHONY : GenericServer/mainServer.i
+
+# target to preprocess a source file
+GenericServer/mainServer.cpp.i:
+	$(MAKE) -f CMakeFiles/UserManager.dir/build.make CMakeFiles/UserManager.dir/GenericServer/mainServer.cpp.i
+.PHONY : GenericServer/mainServer.cpp.i
+
+GenericServer/mainServer.s: GenericServer/mainServer.cpp.s
+
+.PHONY : GenericServer/mainServer.s
+
+# target to generate assembly for a file
+GenericServer/mainServer.cpp.s:
+	$(MAKE) -f CMakeFiles/UserManager.dir/build.make CMakeFiles/UserManager.dir/GenericServer/mainServer.cpp.s
+.PHONY : GenericServer/mainServer.cpp.s
+
 HashFunct/HashClass.o: HashFunct/HashClass.cpp.o
 
 .PHONY : HashFunct/HashClass.o
@@ -417,6 +444,9 @@ help:
 	@echo "... DataStructs/DataStructures.o"
 	@echo "... DataStructs/DataStructures.i"
 	@echo "... DataStructs/DataStructures.s"
+	@echo "... GenericServer/mainServer.o"
+	@echo "... GenericServer/mainServer.i"
+	@echo "... GenericServer/mainServer.s"
 	@echo "... HashFunct/HashClass.o"
 	@echo "... HashFunct/HashClass.i"
 	@echo "... HashFunct/HashClass.s"

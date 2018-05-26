@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/eduardo/Documents/Datos II/GenericServer/main.cpp
+iostream
+-
+fstream
+-
+mainServer.h
+/home/eduardo/Documents/Datos II/GenericServer/mainServer.h
+string
+/home/eduardo/Documents/Datos II/GenericServer/string
+
+/home/eduardo/Documents/Datos II/GenericServer/mainServer.cpp
+iostream
+-
+mainServer.h
+/home/eduardo/Documents/Datos II/GenericServer/mainServer.h
+
+/home/eduardo/Documents/Datos II/GenericServer/mainServer.h
+stdio.h
+-
+string.h
+-
+sys/socket.h
+-
+arpa/inet.h
+-
+unistd.h
+-
+string
+/home/eduardo/Documents/Datos II/GenericServer/string
+

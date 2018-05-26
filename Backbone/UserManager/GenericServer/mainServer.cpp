@@ -1,0 +1,121 @@
+//
+// Created by eduardo on 04/05/18.
+//
+
+#include <iostream>
+#include "mainServer.h"
+
+using string = std::string;
+
+mainServer::mainServer(int port) {
+
+    this->port= port;
+
+}
+
+short mainServer::SocketCreate(){
+
+    short hSocket;
+    printf("Create the socket\n");
+
+    hSocket = socket(AF_INET, SOCK_STREAM, 0);
+
+    return hSocket;
+}
+
+int mainServer::BindCreatedSocket(int hSocket) {
+
+    int iRetval=-1;
+    int ClientPort = port;
+    struct sockaddr_in  remote={0};
+
+
+    remote.sin_family = AF_INET; /* Internet address family */
+    remote.sin_addr.s_addr = htonl(INADDR_ANY); /* Any incoming interface */
+    remote.sin_port = htons(ClientPort); /* Local port */
+    iRetval = bind(hSocket,(struct sockaddr *)&remote,sizeof(remote));
+
+    return iRetval;
+}
+
+int mainServer::runServer(){
+    int socket_desc , sock , clientLen , read_size;
+    struct sockaddr_in server , client;
+    char client_message[200]={0};
+    char message[5000] = {0};
+
+    //Create socket
+    socket_desc = SocketCreate();
+    if (socket_desc == -1)
+    {
+        printf("Could not create socket");
+        return 1;
+    }
+    printf("Socket created\n");
+
+
+    //Bind
+    if( BindCreatedSocket(socket_desc) < 0)
+    {
+        //print the error message
+        perror("bind failed.");
+        return 1;
+    }
+    printf("bind done\n");
+
+    //Listen
+    listen(socket_desc , 3);
+
+    //Accept and incoming connection
+
+    while(1)
+    {
+
+        printf("Waiting for incoming connections...\n");
+        clientLen = sizeof(struct sockaddr_in);
+
+        //accept connection from an incoming client
+        sock = accept(socket_desc, (struct sockaddr *)&client, (socklen_t*)&clientLen);
+        if (sock < 0)
+        {
+            perror("accept failed");
+            return 1;
+        }
+        printf("Connection accepted\n");
+
+        memset(client_message, '\0', sizeof client_message);
+        memset(message, '\0', sizeof message);
+
+
+        //Receive a reply from the client
+        if( recv(sock , client_message , 200 , 0) < 0)
+        {
+            printf("recv failed");
+            break;
+        }
+
+        //printf("Client reply : %s\n",client_message);
+
+        string str(client_message);
+
+        cout << client_message;
+
+        string reply = SERVER->recieveData(str);
+
+        strcpy(message, reply.c_str());
+
+        // Send some data
+        if( send(sock , message , strlen(message) , 0) < 0)
+        {
+            printf("Send failed");
+            return 1;
+        }
+
+        std::cout << message << "\n";
+
+
+        close(sock);
+        sleep(1);
+
+    }
+}

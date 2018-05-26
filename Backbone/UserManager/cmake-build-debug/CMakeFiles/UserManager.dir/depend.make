@@ -30,6 +30,22 @@ CMakeFiles/UserManager.dir/DataStructs/DataStructures.cpp.o: ../DataStructs/Data
 CMakeFiles/UserManager.dir/DataStructs/DataStructures.cpp.o: ../DataStructs/DataStructures.h
 CMakeFiles/UserManager.dir/DataStructs/DataStructures.cpp.o: ../DataStructs/DataStructures.tpp
 
+CMakeFiles/UserManager.dir/GenericServer/mainServer.cpp.o: /home/eduardo/Documents/Datos\ II/Proyecto\ 2/Backbone/AVLTree/AVLTree.h
+CMakeFiles/UserManager.dir/GenericServer/mainServer.cpp.o: ../AlphabeticTree/AlphaTree.h
+CMakeFiles/UserManager.dir/GenericServer/mainServer.cpp.o: ../BTree/BTree.h
+CMakeFiles/UserManager.dir/GenericServer/mainServer.cpp.o: ../DataBaseManager.h
+CMakeFiles/UserManager.dir/GenericServer/mainServer.cpp.o: ../DataManager/JSONManager.h
+CMakeFiles/UserManager.dir/GenericServer/mainServer.cpp.o: ../DataManager/nlohmann/json.hpp
+CMakeFiles/UserManager.dir/GenericServer/mainServer.cpp.o: ../DataStructs/DataStructures.h
+CMakeFiles/UserManager.dir/GenericServer/mainServer.cpp.o: ../DataStructs/DataStructures.tpp
+CMakeFiles/UserManager.dir/GenericServer/mainServer.cpp.o: ../GenericServer/mainServer.cpp
+CMakeFiles/UserManager.dir/GenericServer/mainServer.cpp.o: ../GenericServer/mainServer.h
+CMakeFiles/UserManager.dir/GenericServer/mainServer.cpp.o: ../HashFunct/HashClass.h
+CMakeFiles/UserManager.dir/GenericServer/mainServer.cpp.o: ../XMLManager/XMLManager.h
+CMakeFiles/UserManager.dir/GenericServer/mainServer.cpp.o: ../XMLManager/XMLParts.h
+CMakeFiles/UserManager.dir/GenericServer/mainServer.cpp.o: ../XMLManager/pugiconfig.hpp
+CMakeFiles/UserManager.dir/GenericServer/mainServer.cpp.o: ../XMLManager/pugixml.hpp
+
 CMakeFiles/UserManager.dir/HashFunct/HashClass.cpp.o: ../DataStructs/DataStructures.h
 CMakeFiles/UserManager.dir/HashFunct/HashClass.cpp.o: ../DataStructs/DataStructures.tpp
 CMakeFiles/UserManager.dir/HashFunct/HashClass.cpp.o: ../HashFunct/HashClass.cpp
@@ -58,6 +74,7 @@ CMakeFiles/UserManager.dir/main.cpp.o: ../DataManager/JSONManager.h
 CMakeFiles/UserManager.dir/main.cpp.o: ../DataManager/nlohmann/json.hpp
 CMakeFiles/UserManager.dir/main.cpp.o: ../DataStructs/DataStructures.h
 CMakeFiles/UserManager.dir/main.cpp.o: ../DataStructs/DataStructures.tpp
+CMakeFiles/UserManager.dir/main.cpp.o: ../GenericServer/mainServer.h
 CMakeFiles/UserManager.dir/main.cpp.o: ../HashFunct/HashClass.h
 CMakeFiles/UserManager.dir/main.cpp.o: ../XMLManager/XMLManager.h
 CMakeFiles/UserManager.dir/main.cpp.o: ../XMLManager/XMLParts.h
