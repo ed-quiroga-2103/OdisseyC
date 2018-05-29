@@ -12,7 +12,12 @@ using string = std::string;
 int main() {
 
     mainServer server(8081);
+/*
+    XMLManager xml;
 
+    string a = xml.newXMLDoc(1,"user")->toString();
+    std::cout << a;
+*/
     server.runServer();
 /*
     DataBaseManager* um = new DataBaseManager();
@@ -21,11 +26,13 @@ int main() {
 
     json j;
 
-    j = jm.newUser("user","user","user","user","user");
+    j["pass"] = "user";
+    j["username"] = "user";
+
 
     XMLDoc doc(0);
 
-    doc.newChild(0, j.dump());
+    doc.newChild(1, j.dump());
 
     std::cout << um->recieveData(doc.toString());
 */

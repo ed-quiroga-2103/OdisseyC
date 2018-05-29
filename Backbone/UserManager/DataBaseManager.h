@@ -70,19 +70,19 @@ public:
      * @param data (CDATA from server)
      * @return
      */
-    string registerUser(string data);
+    bool registerUser(string data);
     /***
      * Checks if a user exist and if the password is right
      * @param data (CDATA from server)
      * @return
      */
-    string validateUser(string data);
+    bool validateUser(string data);
     /***
      * Adds a message to the pending message list
      * @param data
      * @return
      */
-    string recommendSong(string data);
+    bool recommendSong(string data);
     /***
      * Returns a basic answer XML with the user data and the song data
      * @param opnum
@@ -96,7 +96,7 @@ public:
      * @return
      *
      */
-    string addFriend(string data);
+    bool addFriend(string data);
 
 //------------------------------------------Song management---------------------------------------------------------
 /***
@@ -104,7 +104,7 @@ public:
  * @param data (CDATA from server)
  * @return
  */
-    string registerSong(string data);
+    bool registerSong(string data);
     /***
      * Searches a song by name and returns the song data if the song exists
      * @param data

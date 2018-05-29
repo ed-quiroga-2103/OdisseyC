@@ -1,1 +1,1 @@
-[{"age":"user","friends":null,"genres":"user","name":"user","pass":"4690810152127643","pending":null,"username":"user"}]
+[{"age":"user","friends":["user"],"email":"user","genres":"user","name":"user","pass":"4690810152127643","pending":null,"username":"user"}]

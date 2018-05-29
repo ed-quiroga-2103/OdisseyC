@@ -21,17 +21,60 @@ string DataBaseManager::recieveData(string data) {
 
     if(opnum == 0){
 
-        return this->registerUser(CData);
+        if(this->registerUser(CData)){
+
+            return makeAnswerXML(0);
+
+        }
+        else{
+
+            XMLDoc doc(0);
+
+            json j;
+
+            j["confirmation"] = false;
+
+            doc.newChild(opnum, j.dump());
+
+            return doc.toString();
+
+        }
 
     }
     else if(opnum == 1){
 
-        return this->validateUser(CData);
+        if (this->validateUser(CData)){
+
+
+            return makeAnswerXML(1);
+
+        }
+        else{
+
+            XMLDoc doc(0);
+
+            json j;
+
+            j["confirmation"] = false;
+
+            doc.newChild(opnum, j.dump());
+
+            return doc.toString();
+
+        }
 
     }
     else if(opnum == 2){
 
-        return this->registerSong(CData);
+        if(this->registerSong(CData)){
+
+
+
+        }
+        else{
+
+
+        }
 
     }
     else if(opnum == 3){
@@ -71,7 +114,7 @@ string DataBaseManager::recieveData(string data) {
 }
 
 //Answer: True and registered, or False and modify data DONE
-string DataBaseManager::registerUser(string data) {
+bool DataBaseManager::registerUser(string data) {
 
     json j = json::parse(data);
 
@@ -80,6 +123,7 @@ string DataBaseManager::registerUser(string data) {
     if(!UsersTree.exists(j["username"])) {
 
         user["pass"] = Hasher.hash(user["pass"]);
+        user["email"] = j["email"];
 
         UsersTree.newNode(j["username"]);
 
@@ -87,25 +131,17 @@ string DataBaseManager::registerUser(string data) {
 
         this->JManager->saveData();
 
-        json msg;
-
-        msg["confirmation"] = true;
-
-        return msg.dump();
+        return true;
     }
     else{
 
-        json msg;
-
-        msg["confirmation"] = false;
-
-        return msg.dump();
+        return false;
     }
 
 }
 
 //True or False on log in DONE
-string DataBaseManager::validateUser(string data) {
+bool DataBaseManager::validateUser(string data) {
 
     json j = json::parse(data);
 
@@ -124,7 +160,7 @@ string DataBaseManager::validateUser(string data) {
 
             msg["confirmation"] = 1;
 
-            return msg.dump();
+            return true;
         }
         else{
 
@@ -132,7 +168,7 @@ string DataBaseManager::validateUser(string data) {
 
             msg["confirmation"] = 0;
 
-            return msg.dump();
+            return false;
         }
     }else{
 
@@ -140,13 +176,13 @@ string DataBaseManager::validateUser(string data) {
 
         msg["confirmation"] = 0;
 
-        return msg.dump();
+        return false;
 
     }
 }
 
 //True or False, depends on existance of the song
-string DataBaseManager::registerSong(string data) {
+bool DataBaseManager::registerSong(string data) {
     json j = json::parse(data);
 
     //string song, string artist, string album, string lyrics
@@ -167,7 +203,7 @@ string DataBaseManager::registerSong(string data) {
 
         msg["songs"] = makeSongStream(0);
 
-        return msg.dump();
+        return true;
     }
     else{
 
@@ -175,7 +211,7 @@ string DataBaseManager::registerSong(string data) {
 
         msg["confirmation"] = 0;
 
-        return msg.dump();
+        return false;
     }
 
 }
@@ -236,11 +272,13 @@ void DataBaseManager::loadTree() {
 //------------------------------------------------------------------------------------------------------------------------
 
 //True or False, depending on user friends
-string DataBaseManager::recommendSong(string data) {
+bool DataBaseManager::recommendSong(string data) {
 
     json j = json::parse(data);
 
     if(UsersTree.exists(j["friend"])){
+
+        currentUser = j["user"];
 
         string a = j["friend"];
 
@@ -254,7 +292,13 @@ string DataBaseManager::recommendSong(string data) {
         msg << "Hey! Listen to ";
         msg << j["song"];
 
-        user["pending"][user["pending"].size()] = msg.str();
+        json pend;
+
+        pend["song"] = j["song"];
+        pend["user"] = j["friend"];
+        pend["friend"] = j["friend"];
+
+        user["pending"][user["pending"].size()] = pend;
 
         json data = JManager->getData();
 
@@ -266,16 +310,16 @@ string DataBaseManager::recommendSong(string data) {
 
         std::cout << "Pending saved"<< endl;
 
-        return user.dump();
+        return true;
 
     }
 
-    return "User doesnt exists";
+    return false;
 
 }
 
 //True or False, depending on if friend exists
-string DataBaseManager::addFriend(string data) {
+bool DataBaseManager::addFriend(string data) {
 
     json j = json::parse(data);
 
@@ -436,41 +480,55 @@ string DataBaseManager::makeAnswerXML(int opnum) {
     json users = JManager->getData();
 
     if(opnum == 0){
+        json JSON;
+        JSON["confirmation"] = true;
+        XMLDoc doc(0);
+
+        doc.newChild(opnum, JSON.dump());
+
+        return doc.toString();
 
     }
-    else {
+    else if (opnum == 1) {
         json JSON;
 
         JSON["songs"] = makeSongStream(0);
-
-        std::stringstream stream;
 
         for(int i = 0 ; i < users.size(); i++){
 
             json current = users[i];
 
             if(current["username"]==currentUser){
-                json json1 = current["pending"];
+                json user;
 
-                if(json1 != NULL) {
-                    for (int j = 0; j < current["pending"].size(); j++) {
+                user["name"] = current["name"];
+                user["username"] = current["username"];
+                user["age"] = current["age"];
+                user["email"] = current["email"];
 
-                        stream << users[i]["pending"][j];
-                        stream << "\n";
+                JSON["user"] = user;
 
-                    }
+                JSON["pending"] = user["pending"];
 
-                    JSON["pending"] = stream.str();
-                }
-                else{
+                JSON["confirmation"] = true;
 
-                    JSON["pending"] = "No pending messages";
 
-                }
+
+
                 break;
             }
         }
+        XMLDoc doc(0);
 
+        doc.newChild(opnum, JSON.dump());
+
+        return doc.toString();
+    }
+    else if (opnum == 2){
+
+        json JSON;
+        JSON["confirmation"] = true;
+        JSON["songs"] = makeSongStream(0);
         XMLDoc doc(0);
 
         doc.newChild(opnum, JSON.dump());
@@ -479,5 +537,8 @@ string DataBaseManager::makeAnswerXML(int opnum) {
 
     }
 
+
 }
+
+
 
