@@ -25,5 +25,6 @@ string XMLManager::getCDATA(string str) {
 int XMLManager::getOpNum(string str) {
     pugi::xml_document doc;
     pugi::xml_parse_result result = doc.load_string(str.c_str());
+
     return std::stoi(doc.child("oddata").child("data").child("opnum").text().get());
 }
