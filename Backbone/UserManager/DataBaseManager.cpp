@@ -530,7 +530,7 @@ string DataBaseManager::modifySong(string data) {
 }
 
 //No answer
-string DataBaseManager::makeSongStream(int page){
+json DataBaseManager::makeSongStream(int page){
 
     std::stringstream stream;
     json songs = SongManager->getData();
@@ -540,7 +540,7 @@ string DataBaseManager::makeSongStream(int page){
     int CERO = 11*page;
     if(songs.size() == 0){
 
-        packedSongs[0] = json::array();
+
 
     }else {
         for (int i = CERO; i < (CERO) + 11 && i < songs.size(); i++) {
@@ -556,7 +556,7 @@ string DataBaseManager::makeSongStream(int page){
 
         }
     }
-    return packedSongs.dump();
+    return packedSongs;
 
 }
 
