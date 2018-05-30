@@ -62,7 +62,7 @@ public:
      * Returns a string with all the songs, arranged in chronological order
      * @return string
      */
-    string makeSongStream(int page);
+    json makeSongStream(int page);
 //------------------------------------------User management---------------------------------------------------------
 
     /***

@@ -23,11 +23,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DataBaseManager.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DataBaseManager.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataBaseManager.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-160">
-              <caret line="532" column="4" lean-forward="false" selection-start-line="532" selection-start-column="4" selection-end-line="532" selection-end-column="4" />
+            <state relative-caret-position="219">
+              <caret line="454" column="0" lean-forward="false" selection-start-line="454" selection-start-column="0" selection-end-line="454" selection-end-column="0" />
               <folding>
                 <element signature="e#9226#9827#0" expanded="true" />
               </folding>
@@ -45,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataBaseManager.h" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DataBaseManager.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DataBaseManager.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2268">
-              <caret line="126" column="32" lean-forward="false" selection-start-line="126" selection-start-column="32" selection-end-line="126" selection-end-column="32" />
+            <state relative-caret-position="56">
+              <caret line="64" column="8" lean-forward="false" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
               <folding>
                 <element signature="e#111#147#0" expanded="true" />
               </folding>
@@ -141,10 +141,10 @@
         <option value="$PROJECT_DIR$/GenericServer/mainServer.h" />
         <option value="$PROJECT_DIR$/GenericServer/mainServer.cpp" />
         <option value="$PROJECT_DIR$/cmake-build-debug/songs.json" />
-        <option value="$PROJECT_DIR$/DataBaseManager.h" />
         <option value="$PROJECT_DIR$/DataManager/JSONManager.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/DataBaseManager.cpp" />
+        <option value="$PROJECT_DIR$/DataBaseManager.h" />
       </list>
     </option>
   </component>
@@ -269,12 +269,12 @@
       <workItem from="1527277637667" duration="4768000" />
       <workItem from="1527526979758" duration="12233000" />
       <workItem from="1527688305373" duration="2559000" />
-      <workItem from="1527707586402" duration="45000" />
+      <workItem from="1527707586402" duration="356000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75649000" />
+    <option name="totallyTimeSpent" value="75960000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
@@ -642,16 +642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataBaseManager.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2268">
-          <caret line="126" column="32" lean-forward="false" selection-start-line="126" selection-start-column="32" selection-end-line="126" selection-end-column="32" />
-          <folding>
-            <element signature="e#111#147#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GenericServer/mainServer.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1872">
@@ -688,10 +678,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DataBaseManager.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-160">
-          <caret line="532" column="4" lean-forward="false" selection-start-line="532" selection-start-column="4" selection-end-line="532" selection-end-column="4" />
+        <state relative-caret-position="219">
+          <caret line="454" column="0" lean-forward="false" selection-start-line="454" selection-start-column="0" selection-end-line="454" selection-end-column="0" />
           <folding>
             <element signature="e#9226#9827#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataBaseManager.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="64" column="8" lean-forward="false" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
+          <folding>
+            <element signature="e#111#147#0" expanded="true" />
           </folding>
         </state>
       </provider>
