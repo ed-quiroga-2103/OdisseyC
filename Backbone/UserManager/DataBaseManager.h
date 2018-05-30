@@ -116,7 +116,7 @@ public:
      * @param data
      * @return
      */
-    string deleteSong(string data);
+    bool deleteSong(string data);
     /***
      * Modifies song metadata
      * @param data

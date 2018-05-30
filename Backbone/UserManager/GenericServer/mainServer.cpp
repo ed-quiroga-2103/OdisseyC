@@ -102,6 +102,8 @@ int mainServer::runServer(){
 
         string reply = SERVER->recieveData(str);
 
+        reply = this->remove_extra_whitespaces(reply);
+
         strcpy(message, reply.c_str());
 
         // Send some data

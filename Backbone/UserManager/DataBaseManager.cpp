@@ -19,14 +19,13 @@ string DataBaseManager::recieveData(string data) {
     string CData = this->XManager->getCDATA(data);
     int opnum = this->XManager->getOpNum(data);
 
-    if(opnum == 0){
+    if(opnum == 0) {
 
-        if(this->registerUser(CData)){
+        if (this->registerUser(CData)) {
 
             return makeAnswerXML(0);
 
-        }
-        else{
+        } else {
 
             XMLDoc doc(0);
 
@@ -39,8 +38,9 @@ string DataBaseManager::recieveData(string data) {
             return doc.toString();
 
         }
-
     }
+
+
     else if(opnum == 1){
 
         if (this->validateUser(CData)){
@@ -68,18 +68,44 @@ string DataBaseManager::recieveData(string data) {
 
         if(this->registerSong(CData)){
 
-
+            return makeAnswerXML(opnum);
 
         }
         else{
 
+            XMLDoc doc(0);
+
+            json j;
+
+            j["confirmation"] = false;
+
+            doc.newChild(opnum, j.dump());
+
+            return doc.toString();
 
         }
 
     }
     else if(opnum == 3){
 
-        return this->deleteSong(CData);
+        if(this->deleteSong(CData)){
+
+            return makeAnswerXML(opnum);
+
+        }
+        else{
+
+            XMLDoc doc(0);
+
+            json j;
+
+            j["confirmation"] = false;
+
+            doc.newChild(opnum, j.dump());
+
+            return doc.toString();
+
+        }
     }
     else if (opnum == 4){
 
@@ -370,7 +396,7 @@ bool DataBaseManager::hasFriend(json user, string newFriend) {
 }
 
 //Confirmation of deletion of song
-string DataBaseManager::deleteSong(string data) {
+bool DataBaseManager::deleteSong(string data) {
 
     json j = json::parse(data);
 
@@ -394,13 +420,13 @@ string DataBaseManager::deleteSong(string data) {
 
             std::cout << "Song erased"<< endl;
 
-            return current;
+            return true;
 
         }
 
     }
 
-    return "Song doesnt exist";
+    return false;
 
 }
 
@@ -512,12 +538,10 @@ string DataBaseManager::makeAnswerXML(int opnum) {
 
                 JSON["confirmation"] = true;
 
-
-
-
                 break;
             }
         }
+
         XMLDoc doc(0);
 
         doc.newChild(opnum, JSON.dump());
@@ -525,6 +549,18 @@ string DataBaseManager::makeAnswerXML(int opnum) {
         return doc.toString();
     }
     else if (opnum == 2){
+
+        json JSON;
+        JSON["confirmation"] = true;
+        JSON["songs"] = makeSongStream(0);
+        XMLDoc doc(0);
+
+        doc.newChild(opnum, JSON.dump());
+
+        return doc.toString();
+
+    }
+    else if (opnum == 3){
 
         json JSON;
         JSON["confirmation"] = true;
