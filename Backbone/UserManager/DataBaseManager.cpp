@@ -407,7 +407,7 @@ bool DataBaseManager::addFriend(string data) {
 
     if (UsersTree.exists(j["friend"])) {
 
-        string a = j["user"];
+        string a = currentUser;
 
         TreeNode *node = UsersTree.findNode(a);
 
@@ -418,8 +418,6 @@ bool DataBaseManager::addFriend(string data) {
         if (!hasFriend(user, j["friend"])) {
 
             user["friends"][user["friends"].size()] = j["friend"];
-
-            std::cout << "Friend saved" << endl;
 
         }
 
@@ -432,7 +430,10 @@ bool DataBaseManager::addFriend(string data) {
 
         JManager->saveData();
 
-
+        return true;
+    }
+    else{
+        return false;
     }
 }
 

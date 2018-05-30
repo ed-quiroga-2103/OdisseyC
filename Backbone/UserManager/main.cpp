@@ -15,14 +15,15 @@ using string = std::string;
 
 int main() {
 
-    //mainServer server(8081);
+    mainServer server(8081);
+    server.runServer();
+
 /*
     XMLManager xml;
 
     string a = xml.newXMLDoc(1,"user")->toString();
     std::cout << a;
-*/
-    //server.runServer();
+
 
     DataBaseManager* um = new DataBaseManager();
 
@@ -37,7 +38,7 @@ int main() {
     std::cout << um->recieveData(doc.toString());
 
 
-
+*/
 
     return 0;
 }
