@@ -26,8 +26,8 @@
       <file leaf-file-name="DataBaseManager.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DataBaseManager.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="15" column="49" lean-forward="false" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+            <state relative-caret-position="310">
+              <caret line="557" column="5" lean-forward="false" selection-start-line="557" selection-start-column="5" selection-end-line="557" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -58,8 +58,8 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="46" column="33" lean-forward="false" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
+            <state relative-caret-position="238">
+              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -140,9 +140,9 @@
         <option value="$PROJECT_DIR$/GenericServer/mainServer.cpp" />
         <option value="$PROJECT_DIR$/cmake-build-debug/songs.json" />
         <option value="$PROJECT_DIR$/DataBaseManager.h" />
-        <option value="$PROJECT_DIR$/DataBaseManager.cpp" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/DataManager/JSONManager.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/DataBaseManager.cpp" />
       </list>
     </option>
   </component>
@@ -266,12 +266,12 @@
       <workItem from="1527197957605" duration="3016000" />
       <workItem from="1527277637667" duration="4768000" />
       <workItem from="1527526979758" duration="12233000" />
-      <workItem from="1527688305373" duration="1670000" />
+      <workItem from="1527688305373" duration="2523000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74715000" />
+    <option name="totallyTimeSpent" value="75568000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="32" width="1366" height="741" extended-state="6" />
@@ -674,8 +674,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="46" column="33" lean-forward="false" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
+        <state relative-caret-position="238">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -684,8 +684,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DataBaseManager.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="15" column="49" lean-forward="false" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+        <state relative-caret-position="310">
+          <caret line="557" column="5" lean-forward="false" selection-start-line="557" selection-start-column="5" selection-end-line="557" selection-end-column="5" />
           <folding />
         </state>
       </provider>

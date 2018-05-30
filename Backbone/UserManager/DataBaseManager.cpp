@@ -538,20 +538,24 @@ string DataBaseManager::makeSongStream(int page){
     json packedSongs;
 
     int CERO = 11*page;
+    if(songs.size() == 0){
 
-    for(int i = CERO; i < (CERO)+11 && i < songs.size(); i++) {
+        packedSongs[0] = json::array();
 
-        json song;
+    }else {
+        for (int i = CERO; i < (CERO) + 11 && i < songs.size(); i++) {
 
-        song["song"] = songs[i]["song"];
-        song["artist"] = songs[i]["artist"];
-        song["album"] = songs[i]["album"];
-        song["lyrics"] = songs[i]["lyrics"];
+            json song;
 
-        packedSongs[i-(11*page)] = song;
+            song["song"] = songs[i]["song"];
+            song["artist"] = songs[i]["artist"];
+            song["album"] = songs[i]["album"];
+            song["lyrics"] = songs[i]["lyrics"];
 
+            packedSongs[i - (11 * page)] = song;
+
+        }
     }
-
     return packedSongs.dump();
 
 }
