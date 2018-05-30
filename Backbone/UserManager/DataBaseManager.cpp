@@ -623,7 +623,18 @@ string DataBaseManager::makeAnswerXML(int opnum) {
         return doc.toString();
 
     }
-    else if (opnum == 3){
+    else if (opnum == 3) {
+
+        json JSON;
+        JSON["confirmation"] = true;
+        JSON["songs"] = makeSongStream(0);
+        XMLDoc doc(0);
+
+        doc.newChild(opnum, JSON.dump());
+
+        return doc.toString();
+    }
+    else if(opnum == 4){
 
         json JSON;
         JSON["confirmation"] = true;
@@ -634,7 +645,8 @@ string DataBaseManager::makeAnswerXML(int opnum) {
 
         return doc.toString();
 
-    }else if (opnum == 9){
+    }
+    else if (opnum == 9){
 
         json JSON;
         JSON["confirmation"] = true;

@@ -23,15 +23,15 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DataBaseManager.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DataBaseManager.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DataBaseManager.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="435" column="21" lean-forward="false" selection-start-line="435" selection-start-column="21" selection-end-line="435" selection-end-column="21" />
+            <state relative-caret-position="202">
+              <caret line="640" column="42" lean-forward="true" selection-start-line="640" selection-start-column="42" selection-end-line="640" selection-end-column="42" />
               <folding>
+                <element signature="e#6920#7583#0" expanded="true" />
                 <element signature="e#7585#7833#0" expanded="true" />
                 <element signature="e#9236#9866#0" expanded="true" />
-                <element signature="e#9868#11756#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,7 +92,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="data.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmake-build-debug/data.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -136,8 +136,8 @@
         <option value="$PROJECT_DIR$/DataManager/JSONManager.cpp" />
         <option value="$PROJECT_DIR$/DataBaseManager.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/DataBaseManager.cpp" />
         <option value="$PROJECT_DIR$/cmake-build-debug/data.json" />
+        <option value="$PROJECT_DIR$/DataBaseManager.cpp" />
       </list>
     </option>
   </component>
@@ -262,12 +262,12 @@
       <workItem from="1527277637667" duration="4768000" />
       <workItem from="1527526979758" duration="12233000" />
       <workItem from="1527688305373" duration="2559000" />
-      <workItem from="1527707586402" duration="2899000" />
+      <workItem from="1527707586402" duration="3385000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78503000" />
+    <option name="totallyTimeSpent" value="78989000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
@@ -373,9 +373,9 @@
         <state relative-caret-position="432">
           <caret line="24" column="47" lean-forward="false" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
           <folding>
+            <element signature="e#6920#7583#0" expanded="true" />
             <element signature="e#7585#7833#0" expanded="true" />
             <element signature="e#9236#9866#0" expanded="true" />
-            <element signature="e#9868#11756#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -677,23 +677,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataBaseManager.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="435" column="21" lean-forward="false" selection-start-line="435" selection-start-column="21" selection-end-line="435" selection-end-column="21" />
-          <folding>
-            <element signature="e#7585#7833#0" expanded="true" />
-            <element signature="e#9236#9866#0" expanded="true" />
-            <element signature="e#9868#11756#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/data.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="168" lean-forward="true" selection-start-line="0" selection-start-column="168" selection-end-line="0" selection-end-column="168" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataBaseManager.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="640" column="42" lean-forward="true" selection-start-line="640" selection-start-column="42" selection-end-line="640" selection-end-column="42" />
+          <folding>
+            <element signature="e#6920#7583#0" expanded="true" />
+            <element signature="e#7585#7833#0" expanded="true" />
+            <element signature="e#9236#9866#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
