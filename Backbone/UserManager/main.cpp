@@ -15,31 +15,27 @@ using string = std::string;
 
 int main() {
 
-    mainServer server(8081);
+    //mainServer server(8081);
 /*
     XMLManager xml;
 
     string a = xml.newXMLDoc(1,"user")->toString();
     std::cout << a;
 */
-    server.runServer();
-/*
+    //server.runServer();
+
     DataBaseManager* um = new DataBaseManager();
 
     JSONManager jm("");
 
-    json j;
-
-    j["pass"] = "user";
-    j["username"] = "user";
-
+    json j = jm.newUser("user","user","user","user","user");
 
     XMLDoc doc(0);
 
-    doc.newChild(1, j.dump());
+    doc.newChild(0, j.dump());
 
     std::cout << um->recieveData(doc.toString());
-*/
+
 
 
 

@@ -594,7 +594,9 @@ string DataBaseManager::makeAnswerXML(int opnum) {
 
                 JSON["user"] = user;
 
-                JSON["pending"] = user["pending"];
+                JSON["pending"] = current["pending"];
+
+                JSON["friends"] = current["friends"];
 
                 JSON["confirmation"] = true;
 
