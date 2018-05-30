@@ -540,7 +540,7 @@ json DataBaseManager::makeSongStream(int page){
     int CERO = 11*page;
     if(songs.size() == 0){
 
-
+        return json::array();
 
     }else {
         for (int i = CERO; i < (CERO) + 11 && i < songs.size(); i++) {
