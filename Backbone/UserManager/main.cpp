@@ -15,14 +15,14 @@ using string = std::string;
 
 int main() {
 
-    mainServer server(8081);
+    //mainServer server(8081);
 /*
     XMLManager xml;
 
     string a = xml.newXMLDoc(1,"user")->toString();
     std::cout << a;
 */
-    server.runServer();
+    //server.runServer();
 /*
     DataBaseManager* um = new DataBaseManager();
 
@@ -40,6 +40,12 @@ int main() {
 
     std::cout << um->recieveData(doc.toString());
 */
+
+    json j;
+    json empty_array_explicit = json::array();
+    j["arr"] = empty_array_explicit;
+    std::cout << j["arr"].size();
+
 
     return 0;
 }

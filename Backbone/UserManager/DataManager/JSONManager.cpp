@@ -20,8 +20,8 @@ json JSONManager::newUser(string username, string pass, string name, string age,
     user["name"] = name;
     user["age"] = age;
     user["genres"] = genres;
-    user["friends"] = {};
-    user["pending"] = {};
+    user["friends"] = json::array();
+    user["pending"] = json::array();
 
     return user;
 }
