@@ -124,6 +124,8 @@ public:
      */
     string modifySong(string data);
 
+    bool songScore(string data);
+
 };
 
 

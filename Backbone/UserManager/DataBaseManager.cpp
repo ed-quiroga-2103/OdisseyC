@@ -119,12 +119,59 @@ string DataBaseManager::recieveData(string data) {
     }
     else if(opnum == 9){
 
-        this->addFriend(CData);
+        if(this->addFriend(CData)){
 
+            return makeAnswerXML(opnum);
+
+        }
+        else{
+
+            XMLDoc doc(0);
+
+            json j;
+
+            j["confirmation"] = false;
+
+            doc.newChild(opnum, j.dump());
+
+            return doc.toString();
+
+        }
     }
-    else if (opnum == 10){
+    else if (opnum == 10) {
 
         this->recommendSong(CData);
+
+    }
+    else if (opnum == 11){
+
+        if(this->songScore(CData)){
+
+            XMLDoc doc(0);
+
+            json j;
+
+            j["confirmation"] = true;
+
+            doc.newChild(opnum, j.dump());
+
+            return doc.toString();
+
+            return j.dump();
+
+        }else{
+            XMLDoc doc(0);
+
+            json j;
+
+            j["confirmation"] = false;
+
+            doc.newChild(opnum, j.dump());
+
+            return doc.toString();
+
+
+        }
 
     }
     else if (opnum == 98){
@@ -133,8 +180,17 @@ string DataBaseManager::recieveData(string data) {
 
         int page = j["page"];
 
-        return makeSongStream(page);
+        json ret;
 
+        ret["songs"] = makeSongStream(page);
+
+        XMLDoc doc(0);
+
+        ret["confirmation"] = true;
+
+        doc.newChild(opnum, ret.dump());
+
+        return doc.toString();
     }
 
 }
@@ -571,10 +627,60 @@ string DataBaseManager::makeAnswerXML(int opnum) {
 
         return doc.toString();
 
+    }else if (opnum == 9){
+
+        json JSON;
+        JSON["confirmation"] = true;
+
+        int ind = UsersTree.findNode(currentUser)->getInd();
+
+        json user = JManager->getData()[ind];
+
+        JSON["friends"] = user["friends"];
+        XMLDoc doc(0);
+
+        doc.newChild(opnum, JSON.dump());
+
+        return doc.toString();
+
     }
 
 
 }
 
+bool DataBaseManager::songScore(string data) {
+
+    json j = json::parse(data);
+
+    json songs = SongManager->getData();
+
+    string current;
+
+    for(int i = 0; i < songs.size(); i++){
+
+        current = songs[i]["song"];
+
+        if(current == j["song"]){
+
+            json data = SongManager->getData();
+
+            json song  = data[i];
+
+            data.erase(i);
+
+            song["rating"] = j["rate"];
+
+            data[data.size()] = song;
+
+            SongManager->updateData(data);
+
+            SongManager->saveData();
+            return true;
+        }
+
+    }
+    return false;
+
+}
 
 
