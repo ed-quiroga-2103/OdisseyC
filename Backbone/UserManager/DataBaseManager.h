@@ -122,7 +122,7 @@ public:
      * @param data
      * @return
      */
-    string modifySong(string data);
+    bool modifySong(string data);
 
     bool songScore(string data);
 

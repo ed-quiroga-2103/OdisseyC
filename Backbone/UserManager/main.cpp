@@ -15,10 +15,10 @@ using string = std::string;
 
 int main() {
 
-    mainServer server(8081);
-    server.runServer();
+    //mainServer server(8081);
+    //server.runServer();
 
-/*
+
     XMLManager xml;
 
     string a = xml.newXMLDoc(1,"user")->toString();
@@ -29,16 +29,16 @@ int main() {
 
     JSONManager jm("");
 
-    json j = jm.newUser("user","user","user","user","user");
+    json j = jm.newSong("song","asdf","asf","asdf");
 
     XMLDoc doc(0);
 
-    doc.newChild(0, j.dump());
+    doc.newChild(3, j.dump());
 
     std::cout << um->recieveData(doc.toString());
 
 
-*/
+
 
     return 0;
 }

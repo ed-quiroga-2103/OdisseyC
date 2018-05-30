@@ -108,9 +108,23 @@ string DataBaseManager::recieveData(string data) {
         }
     }
     else if (opnum == 4){
+        if(this->modifySong(CData)){
 
-        return this->modifySong(CData);
+            return makeAnswerXML(4);
 
+         }
+        else{
+
+            XMLDoc doc(0);
+
+            json j;
+
+            j["confirmation"] = false;
+
+            doc.newChild(opnum, j.dump());
+
+            return doc.toString();
+        }
     }
     else if(opnum == 5){
 
@@ -488,7 +502,7 @@ bool DataBaseManager::deleteSong(string data) {
 }
 
 //Confirmation on modification of song and new song data or message of failure
-string DataBaseManager::modifySong(string data) {
+bool DataBaseManager::modifySong(string data) {
 
     json j = json::parse(data);
 
@@ -521,12 +535,12 @@ string DataBaseManager::modifySong(string data) {
             SongManager->updateData(data);
 
             SongManager->saveData();
-            return "Song updated";
+            return true;
         }
 
     }
 
-    return "Song doesnt exist";
+    return false;
 
 }
 
